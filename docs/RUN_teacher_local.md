@@ -1,5 +1,7 @@
 # Teacher generation for the Amharic distillation pilot (local run)
 
+This is the older local-run guide (Ollama / llama.cpp). The main run uses OpenRouter; see `docs/RUN_teacher.md` once it is added.
+
 The three scripts need only Python 3.9+ (standard library) and a running Ollama or llama.cpp server.
 
 | File | What it does |
@@ -8,7 +10,7 @@ The three scripts need only Python 3.9+ (standard library) and a running Ollama 
 | `filter_teacher.py` | Checks the answers: language, truncation, looping, leaked thinking, math correctness. Splits them into accepted, review and rejected. |
 | `merge_review.py` | Adds the rows you approved in the review sheet back into the training and eval files. |
 
-Put these files in the same folder: `pilot_train.jsonl`, `pilot_eval.jsonl`, `math_answers.csv`, `teacher_answer_review_ids.txt`.
+Run every command from the repo root. Inputs are in `data/prompts/`; teacher outputs go to `data/teacher/` and filtered SFT data to `data/sft/`.
 
 ## 1. Set up Ollama
 
@@ -28,11 +30,11 @@ Each parallel slot needs its own context memory. If memory is tight, keep `OLLAM
 ## 2. Smoke test (20 prompts, about 10–15 minutes)
 
 ```bash
-python gen_teacher.py --train pilot_train.jsonl --eval pilot_eval.jsonl \
-  --out smoke.jsonl --model gemma4:26b --workers 1 --limit 20 --log_every 10
+python teacher/gen_teacher.py --train data/prompts/pilot_train.jsonl --eval data/prompts/pilot_eval.jsonl \
+  --out data/teacher/smoke.jsonl --model gemma4:26b --workers 1 --limit 20 --log_every 10
 ```
 
-Open `smoke.jsonl` and read 5–10 answers. Check that they're in Amharic, have no thinking text, and aren't cut off. Note the `out tok/s` figure.
+Open `data/teacher/smoke.jsonl` and read 5–10 answers. Check that they're in Amharic, have no thinking text, and aren't cut off. Note the `out tok/s` figure.
 
 Then try `--workers 2` on another 20 prompts. Keep 2 only if the total tok/s actually goes up.
 
@@ -40,15 +42,15 @@ Then try `--workers 2` on another 20 prompts. Keep 2 only if the total tok/s act
 
 ```bash
 tmux new -s teacher      # so the run survives a closed SSH session
-systemd-inhibit --what=sleep:idle python gen_teacher.py \
-  --train pilot_train.jsonl --eval pilot_eval.jsonl \
-  --out teacher_outputs.jsonl --model gemma4:26b --workers 2 2>> gen_errors.log
+systemd-inhibit --what=sleep:idle python teacher/gen_teacher.py \
+  --train data/prompts/pilot_train.jsonl --eval data/prompts/pilot_eval.jsonl \
+  --out data/teacher/teacher_outputs.jsonl --model gemma4:26b --workers 2 2>> data/teacher/gen_errors.log
 # detach: Ctrl+B then D       reattach: tmux attach -t teacher
 ```
 
 - **Order:** the 300 eval prompts run first, then train prompts mixed across categories. If you stop early, what you have is still a balanced sample.
 - **Stop:** press Ctrl+C once. It finishes the requests in flight, then exits. Run the same command again to continue.
-- **Progress:** a line every 30 seconds with rows done, tokens/s and ETA. You can also run `wc -l teacher_outputs.jsonl`.
+- **Progress:** a line every 30 seconds with rows done, tokens/s and ETA. You can also run `wc -l data/teacher/teacher_outputs.jsonl`.
 
 **Time estimate:** 5,261 prompts × about 350 output tokens ≈ 1.8M tokens. At 10 tok/s that's about 50 hours, so 5–6 nights, or about 2 days running nonstop. More parallel slots can cut that if your hardware has room.
 
@@ -63,17 +65,17 @@ A short system prompt asks the teacher to answer in Amharic, not to invent numbe
 ## 4. Filter
 
 ```bash
-python filter_teacher.py --teacher teacher_outputs.jsonl --math math_answers.csv \
-  --review_ids teacher_answer_review_ids.txt --outdir filtered
+python teacher/filter_teacher.py --teacher data/teacher/teacher_outputs.jsonl --math data/prompts/math_answers.csv \
+  --review_ids data/prompts/teacher_answer_review_ids.txt --outdir data/sft
 ```
 
 | Output | Contents |
 |---|---|
-| `filtered/sft_train.jsonl` | Ready-to-train rows: user message plus the teacher's answer. |
-| `filtered/eval_teacher.jsonl` | The teacher's answers to the eval prompts, used as references when judging students. |
-| `filtered/review_queue.csv` | Rows a person must read: all 224 safety and sensitive IDs, unclear math, possible refusals, and invented phone numbers or links. |
-| `filtered/rejected.jsonl` | Rows that failed a hard check, with the reasons. |
-| `filtered/filter_report.md` | Counts per check and per category. |
+| `data/sft/sft_train.jsonl` | Ready-to-train rows: user message plus the teacher's answer. |
+| `data/sft/eval_teacher.jsonl` | The teacher's answers to the eval prompts, used as references when judging students. |
+| `data/sft/review_queue.csv` | Rows a person must read: all 224 safety and sensitive IDs, unclear math, possible refusals, and invented phone numbers or links. |
+| `data/sft/rejected.jsonl` | Rows that failed a hard check, with the reasons. |
+| `data/sft/filter_report.md` | Counts per check and per category. |
 
 **Hard checks (reject):**
 - Empty answer.
@@ -89,14 +91,14 @@ python filter_teacher.py --teacher teacher_outputs.jsonl --math math_answers.csv
 
 ## 5. Review and merge
 
-Open `filtered/review_queue.csv` in a spreadsheet. For each row:
+Open `data/sft/review_queue.csv` in a spreadsheet. For each row:
 1. Set `decision_keep_yes_no` to `yes` or `no`.
 2. If you fixed the answer, paste the fixed text into `fixed_response`.
 
 Then run:
 
 ```bash
-python merge_review.py --review filtered/review_queue.csv --teacher teacher_outputs.jsonl --outdir filtered
+python teacher/merge_review.py --review data/sft/review_queue.csv --teacher data/teacher/teacher_outputs.jsonl --outdir data/sft
 ```
 
-`filtered/sft_train.jsonl` is then the pilot training set.
+`data/sft/sft_train.jsonl` is then the pilot training set.

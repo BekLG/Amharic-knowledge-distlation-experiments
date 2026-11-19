@@ -176,7 +176,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--train", required=True)
     ap.add_argument("--eval", required=True)
-    ap.add_argument("--out", default="teacher_outputs.jsonl")
+    ap.add_argument("--out", default="data/teacher/teacher_outputs.jsonl")
     ap.add_argument("--backend", choices=["ollama", "openai"], default="ollama")
     ap.add_argument("--url", default="http://localhost:11434")
     ap.add_argument("--model", default="gemma4:26b")

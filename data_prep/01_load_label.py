@@ -13,7 +13,7 @@ import pandas as pd
 from common import RAW, WORK, MANUAL, ROOT, lines_of, norm_text, language_mode, read_csv
 from families import GEN1_TAILS, build_instruction_counter, detect
 
-# instruction id -> group (see data/manual/pair_overrides.tsv header)
+# instruction id -> group (see data_prep/manual/pair_overrides.tsv header)
 GROUPS = {
     "home": "I2 I29 I31 I68 G19", "decision": "I8 I11 I61 I64 G18",
     "relationships": "I0 I34 I38 I66 G6", "work": "I16 I22 I28 I44 G9",

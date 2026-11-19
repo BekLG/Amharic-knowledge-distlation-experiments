@@ -8,8 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw"
 WORK = ROOT / "data" / "work"
-OUT = ROOT / "data" / "out"
-MANUAL = ROOT / "data" / "manual"  # hand-authored judgements and prompts
+OUT = ROOT / "data" / "prompts"
+MANUAL = ROOT / "data_prep" / "manual"  # hand-authored judgements and prompts
 
 CATEGORIES = [
     "native_chat", "english_instruction", "translated_instruction", "summarization",

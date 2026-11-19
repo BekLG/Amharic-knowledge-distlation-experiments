@@ -1,5 +1,5 @@
 """Step 10: assemble the train set from every step, pass through untouched rows,
-add the hand-written gap-filling prompts (data/manual/new_prompts/*.txt) and trim
+add the hand-written gap-filling prompts (data_prep/manual/new_prompts/*.txt) and trim
 categories that exceed their range.
 
 Writes data/work/train_assembled.jsonl, data/work/removed_all.jsonl, step10_counts.json
@@ -22,7 +22,7 @@ HANDLED_FAMILIES = {"en", "dolly_ctx", "pair", "gen1", "format", "format_text", 
 
 
 def load_new_prompts():
-    """data/manual/new_prompts/*.txt: '## category/subcategory' headers, one prompt per line."""
+    """data_prep/manual/new_prompts/*.txt: '## category/subcategory' headers, one prompt per line."""
     out = []
     for f in sorted((MANUAL / "new_prompts").glob("*.txt")):
         cat = sub = None

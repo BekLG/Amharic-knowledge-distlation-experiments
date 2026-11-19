@@ -13,7 +13,7 @@ import argparse, csv, json, os
 ap = argparse.ArgumentParser()
 ap.add_argument("--review", required=True)
 ap.add_argument("--teacher", required=True)
-ap.add_argument("--outdir", default="filtered")
+ap.add_argument("--outdir", default="data/sft")
 args = ap.parse_args()
 
 teacher = {}

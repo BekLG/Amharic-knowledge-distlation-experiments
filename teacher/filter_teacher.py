@@ -140,7 +140,7 @@ def main():
     ap.add_argument("--teacher", required=True)
     ap.add_argument("--math", required=True)
     ap.add_argument("--review_ids", required=True)
-    ap.add_argument("--outdir", default="filtered")
+    ap.add_argument("--outdir", default="data/sft")
     ap.add_argument("--min_am", type=float, default=0.70, help="min Ge'ez share of letters for Amharic answers")
     ap.add_argument("--min_am_low", type=float, default=0.45, help="same, for code-switch / Latin / English-instruction prompts")
     args = ap.parse_args()

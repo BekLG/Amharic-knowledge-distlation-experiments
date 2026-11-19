@@ -1,4 +1,4 @@
-"""Write data/out/REPORT.md from the work files and validation results."""
+"""Write data/prompts/REPORT.md from the work files and validation results."""
 import json
 from collections import Counter, defaultdict
 
@@ -96,7 +96,7 @@ def main():
 
     unsure = [
         "**No `prompts.csv` was available**, so `source` was recovered by reading the rows: Aya/AddisGPT vs. NQ-Open vs. Dolly vs. "
-        "v2-generated is my judgement (see `data/manual/residual_labels.txt`). Short native-style trivia without an NQ answer tail was "
+        "v2-generated is my judgement (see `data_prep/manual/residual_labels.txt`). Short native-style trivia without an NQ answer tail was "
         "labelled `aya_dataset`/`native_chat`; native_chat ends at 500 vs. the ~472 exact matches the spec mentions.",
         "**English prompts:** only ~300 English rows existed (the other ~100 of the \"about 400\" were romanised Amharic), so I "
         "translated 78 and filled `translated_instruction` with the 82 Amharic Dolly translations already present plus 58 more "
@@ -126,8 +126,8 @@ def main():
         f"Train: **{len(train)}** rows · Eval: **{len(evalr)}** rows · Removed: **{len(removed)}** input rows · "
         f"Changed: **{len(changed)}** rows · needs_human_review: **{nh}** · teacher-answer review list: **{teacher}** ids.",
         "",
-        "Everything is reproducible from `data/raw/` with `scripts/run_all.sh`. Hand-made judgements and prompts live in "
-        "`data/manual/` (labels, pair verdict overrides, instruction variants, translations, math, Latin-script and new prompts).",
+        "Everything is reproducible from `data/raw/` with `data_prep/run_all.sh`. Hand-made judgements and prompts live in "
+        "`data_prep/manual/` (labels, pair verdict overrides, instruction variants, translations, math, Latin-script and new prompts).",
         "",
         "## Validation (step 14)",
         "",
@@ -181,10 +181,10 @@ def main():
         "",
         "## Files",
         "",
-        "- `data/out/pilot_train.jsonl`, `data/out/pilot_eval.jsonl` — final sets (schema in the spec).",
-        "- `data/out/removed.csv` — every dropped input row with its reason; `data/out/changed.csv` — every modified row.",
-        "- `data/out/review_sample.csv` — 150 rows for native-speaker review (stratified, all eval categories).",
-        "- `data/out/teacher_answer_review_ids.txt` — safety and sensitive prompts whose teacher answers must be read.",
+        "- `data/prompts/pilot_train.jsonl`, `data/prompts/pilot_eval.jsonl` — final sets (schema in the spec).",
+        "- `data/prompts/removed.csv` — every dropped input row with its reason; `data/prompts/changed.csv` — every modified row.",
+        "- `data/prompts/review_sample.csv` — 150 rows for native-speaker review (stratified, all eval categories).",
+        "- `data/prompts/teacher_answer_review_ids.txt` — safety and sensitive prompts whose teacher answers must be read.",
         "- `data/work/labelled.parquet`, `data/work/pair_review.csv`, `data/work/math_answers.csv`, `data/work/validation.json`.",
     ]
     (OUT / "REPORT.md").write_text("\n".join(md) + "\n", encoding="utf-8")

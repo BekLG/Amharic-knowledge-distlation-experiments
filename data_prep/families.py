@@ -2,7 +2,7 @@
 
 Each input row gets a `family` describing how it was produced. Families drive the
 default category/source; rows in the `residual` family are labelled by hand
-(data/manual/residual_labels.csv).
+(data_prep/manual/residual_labels.csv).
 """
 import re
 from collections import Counter

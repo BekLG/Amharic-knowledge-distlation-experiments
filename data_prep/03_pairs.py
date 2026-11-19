@@ -1,9 +1,9 @@
 """Step 3 (+ step 6 code-switch and step 9 safety for generated rows):
 review the mechanically combined situation + instruction prompts.
 
-* verdicts: data/manual/pair_overrides.tsv (drop / rewrite); unlisted pairs fit -> keep
+* verdicts: data_prep/manual/pair_overrides.tsv (drop / rewrite); unlisted pairs fit -> keep
 * each situation is kept at most 3 times (extras dropped)
-* AI-test guardrails removed by swapping in natural variants (data/manual/instruction_variants.tsv)
+* AI-test guardrails removed by swapping in natural variants (data_prep/manual/instruction_variants.tsv)
 * no instruction line > 8 uses; >= 40 % of kept 2-line pairs merged into one paragraph
 * form labels ዝግጅታችን፦ / ርዕሰ ጉዳዬ፦ / የጻፍኩት፦ rephrased in >= 70 % of rows
 Writes data/work/pair_review.csv and step3_rows / step3_removed.
