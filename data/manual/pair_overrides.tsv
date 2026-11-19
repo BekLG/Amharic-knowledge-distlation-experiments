@@ -1,0 +1,159 @@
+# Per-pair judgements from reading every situation with its instruction set.
+# situation_id	instruction	verdict(d|r)	reason_or_new_instruction
+# Situation ids refer to the sorted situation table built by scripts/03_pairs.py (S0..S419).
+# Pairs not listed are judged `keep` (they fit); afterwards each situation keeps at most 3 rows.
+# --- relationships (C) ---
+S31	I34	d	no boundary to set when congratulating a friend
+S17	I34	d	no boundary to set when reconnecting
+S139	I34	d	cancelling an appointment is not a boundary issue
+S131	I34	d	after breaking a friend's item the user needs an apology, not a boundary
+S330	I34	d	forgetting to return a book needs an apology, not a boundary
+S198	I34	r	አዲስ ሰዎችን ስተዋወቅ ውይይት እንዴት ልጀምር? ዝም እንዳልል የሚረዱ ቀላል ጥያቄዎች ስጠኝ።
+S198	I38	r	ሰዎችን ለመተዋወቅ የት ልሂድ? በሳምንት ልሞክራቸው የምችላቸው ሦስት ነገሮች ንገረኝ።
+S198	G6	d	no addressee: there is nobody to talk to yet
+S198	I0	d	no conversation partner exists
+S198	I66	d	no other person's behaviour to interpret
+S31	I66	d	no other person's behaviour to interpret
+S16	I66	d	no other person's behaviour to interpret
+S139	I66	d	no other person's behaviour to interpret
+S131	I66	d	no other person's behaviour to interpret
+S330	I66	d	no other person's behaviour to interpret
+S174	I66	d	no other person's behaviour to interpret
+S23	I66	d	no other person's behaviour to interpret
+S167	I66	d	no other person's behaviour to interpret
+# --- work (D) ---
+S114	I28	d	job seeker has no colleague
+S114	I44	d	job seeker has no team to make a checklist for
+S161	I28	d	farmer mixing household and farm costs has no colleague
+S161	I44	d	no small team in a family farm budget problem
+S177	I28	d	single-owner shop has no colleague
+S177	I44	d	single-owner shop has no team
+S214	I28	d	working-from-home rest problem does not involve a colleague
+S214	I44	d	personal rest problem, not a team checklist
+S19	I28	d	forgetting what to say on calls does not involve a colleague
+S19	I44	d	personal problem, not a team checklist
+S326	I28	d	too many customer orders: no colleague involved
+S353	I28	d	pricing own handicrafts: no colleague
+S353	I44	d	pricing own handicrafts: no team
+S205	I44	d	estimating as a junior developer is not a weekly team checklist
+# --- home (A) ---
+S157	I29	d	lack of study space has no cause to diagnose
+S148	I29	d	missing sorting system has no cause to diagnose
+S361	I29	d	food disagreement has no cause to inspect
+S379	I29	d	neighbour noise cause is already known
+S361	I31	d	disagreement is not solved by buying things
+S359	I31	d	overspending is not solved by buying more
+S361	G19	d	cost is not the issue in a food disagreement
+# --- messages (E) ---
+S22	I17	d	birthday wish to a colleague should not be a formal work letter
+S28	I17	d	inviting friends to a reading club is not a work letter
+S130	I17	d	returning a notebook taken by mistake needs a short note, not a work letter
+S159	I17	d	neighbourhood clean-up invitation is not a work letter
+S332	I17	d	late book return is a personal note, not a work letter
+S413	I17	d	thanking a friend is not a work letter
+S37	I17	d	asking a teacher about homework is not a work letter
+S37	I50	d	a message to a teacher should not be written like one to a close friend
+S20	I50	d	interview reply should not be written like a message to a close friend
+S144	I50	d	volunteer application should not be casual
+S267	I50	d	asking for a donation report should not be casual
+S289	I50	d	asking about a registration deadline should not be casual
+S319	I50	d	complaint to a seller should not be written like one to a friend
+S321	I50	d	invoice correction should not be casual
+S324	I50	d	declining a job offer should not be casual
+S335	I50	d	delivery enquiry should not be casual
+S365	I50	d	customer complaint acknowledgement should not be casual
+S372	I50	d	shoe exchange request should not be casual
+# --- casual (G) ---
+S34	I30	d	no reason to ask a friend for help with rained-on laundry
+S39	I30	d	reading on the road is not something a friend helps with by message
+S41	I30	d	concentration problem: messaging a friend does not fit
+S45	I30	d	user wants advice on budget, not to ask a friend for help
+S133	I30	d	dark phone photos: messaging a friend does not fit
+S136	I30	d	wasted time at work: messaging a friend does not fit
+S160	I30	d	first work day: messaging a friend for help does not fit
+S170	I30	d	bitter coffee: messaging a friend does not fit
+S206	I30	d	low motivation: messaging a friend does not fit
+S337	I30	d	insomnia: messaging a friend does not fit
+S405	I30	d	forgotten spending: messaging a friend does not fit
+S411	I30	d	the message should go to the neighbour, not a friend
+S406	I30	r	ስራውን እንድንካፈል ለቡድኑ አባላት ምን ብዬ ልጻፍላቸው?
+S416	I30	r	ይቅርታ ለመጠየቅ ለጓደኛዬ ምን ብዬ ልላክለት?
+# --- code-switch (F) ---
+S4	I35	d	fear of presenting is not solved by messaging a friend
+S6	I35	d	prioritising tasks does not need a message to a friend
+S12	I35	d	price quote is for a customer, not a friend
+S211	I35	d	follow-up message goes to the employer, not a friend
+S243	I35	d	phone storage: messaging a friend does not fit
+S247	I35	d	product photo lighting: messaging a friend does not fit
+S251	I35	d	remote-work schedule: messaging a friend does not fit
+S357	I35	d	expense tracking: messaging a friend does not fit
+S241	I35	r	ለgroup members ስራውን እንድንከፋፈል ምን ብዬ ልጻፍ? አጭር message አዘጋጅልኝ።
+S306	I35	r	ለteam lead የበለጠ specific feedback እንዲሰጠን ምን ብዬ ልጠይቅ? short message ጻፍልኝ።
+S2	I54	d	buying a laptop is not a problem with a quick fix
+S211	I54	d	interview follow-up has no quick fix vs long-term split
+S268	I54	d	building a first portfolio has no quick fix vs long-term split
+# --- study (H) ---
+S308	I1	d	group study turning into play is not fixed by a 15-minute drill
+S314	I1	d	procrastination is not fixed by a 15-minute drill
+S134	I1	d	phone-only distance learning is not fixed by a 15-minute drill
+S402	I63	d	self-study from videos has no teacher to ask
+S270	I63	d	public speaking preparation has no teacher in the situation
+# --- places (M) ---
+S75	I32	d	natural park: no history-vs-legend content to separate
+S99	I32	d	lakes ecosystem: no history-vs-legend content to separate
+S262	I32	d	lake ecology: no history-vs-legend content to separate
+S310	I32	d	biodiversity: no history-vs-legend content to separate
+S199	I32	d	volcano: no history-vs-legend content to separate
+S366	I32	d	Dallol landscape: no history-vs-legend content to separate
+S309	I32	d	lakes visit: no history-vs-legend content to separate
+# --- traditions (N) ---
+S87	I25	d	edir is an association, there is no ceremony to photograph
+S351	I25	d	equb is a savings group, there is no ceremony to photograph
+S299	I25	d	photographing mediation sessions is inappropriate
+# --- tech (Q) ---
+S288	I39	d	notifications: no data at risk
+S313	I39	d	Wi-Fi range: no data at risk
+S350	I39	d	data bundle: no data at risk
+S271	I39	d	video meeting: no data at risk
+S47	I39	d	reading long documents: no data at risk
+S154	I39	d	searching in Amharic: no data at risk
+S180	I39	d	typing Amharic: no data at risk
+S264	I39	d	online forms: no data at risk
+# --- distress (R): "how can I help carefully" only fits when helping someone else ---
+S190	G14	r	ምን ላድርግ? ማጭበርበር ይሆን?
+S375	G14	r	ምን ማድረግ እችላለሁ? በጣም ተጨንቄያለሁ።
+S126	G14	r	ምን ባደርግ ይሻላል? እፈራለሁ።
+S137	G14	r	ይህን ስሜት እንዴት ልቋቋመው?
+S138	G14	r	ምን ማድረግ አለብኝ? ለማን ልናገር?
+S208	G14	r	ራሴን እንዴት ልንከባከብ?
+S275	G14	r	ምን ላድርግ? መላክ አለብኝ?
+S276	G14	r	ከመውሰዴ በፊት ምን ላረጋግጥ?
+S146	G14	r	እስኪጠገን ድረስ በጥንቃቄ ምን ላድርግ?
+# --- written text (T) ---
+S392	I47	d	order confirmation for customers is not meant for children
+S393	I47	d	stock announcement is not meant for children
+S398	I47	d	staff note about chairs is not meant for children
+S399	I47	d	file resend request is not meant for children
+S401	I47	d	invoice dispute is not meant for children
+S394	I47	d	return request is not meant for children
+S384	I57	d	practice encouragement is not a customer message
+S387	I57	d	book review is not a customer message
+S383	I57	d	thank-you to a helper is not a customer message
+S389	I57	d	team acknowledgement is not a customer message
+S390	I57	d	note to a supervisor is not a customer message
+
+# --- home (A): I68 talks about housemates; only fits shared-living situations ---
+S33	I68	d	no housemates or shared household mentioned
+S115	I68	d	no housemates or shared household mentioned
+S145	I68	d	no housemates or shared household mentioned
+S157	I68	d	no housemates or shared household mentioned
+S162	I68	d	no housemates or shared household mentioned
+S217	I68	d	no housemates or shared household mentioned
+S283	I68	d	no housemates or shared household mentioned
+S290	I68	d	no housemates or shared household mentioned
+S298	I68	d	no housemates or shared household mentioned
+S311	I68	d	no housemates or shared household mentioned
+S312	I68	d	no housemates or shared household mentioned
+S352	I68	d	no housemates or shared household mentioned
+S359	I68	d	no housemates or shared household mentioned
+S379	I68	d	no housemates or shared household mentioned

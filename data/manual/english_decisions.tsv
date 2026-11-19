@@ -1,0 +1,149 @@
+# index into train English rows (families en + dolly_ctx, in file order)	decision	reason or Amharic translation
+# T = translate (category translated_instruction), D = drop, everything not listed = keep English + Amharic request
+1	T	የአንድ ንግድ ገቢ እንዲቀንስ የሚያደርጉት ምክንያቶች ምንድን ናቸው?
+6	T	ኮምፒውተሬን ለጌም መጠቀም ብፈልግ የትኞቹን ክፍሎች በደንብ ማየት አለብኝ?
+9	T	እነዚህን እንስሳት በአማካይ ክብደታቸው ከትንሽ ወደ ትልቅ ደርድራቸው፦ ትንሽ ወፍ (ፊንች)፣ ዝሆን፣ ፍየል፣ ሚዳቋ እና ጥንቸል።
+12	T	በእንቁራሪትና በጓጉንቸር መካከል ያለው ልዩነት ምንድን ነው?
+15	T	ሰዎች ጣፋጭ ነገሮችን ይህን ያህል የሚወዱት ለምንድን ነው?
+16	T	የአየር ንብረት ለውጥን የሚክዱ ቡድኖች ከጀርባቸው ምን አይነት ፍላጎት አላቸው?
+19	T	ቤቴን ላስቀባ ነው። ለመኝታ ክፍሌ የሚሆኑ አምስት አይነት ሰማያዊ ቀለሞች ጠቁመኝ።
+30	T	በብሔራዊ ሰንደቅ ዓላማው ላይ ንስርና እባብ ያለበት የትኛው አገር ነው?
+32	T	ስልክን የፈጠረው ማን ነው?
+40	T	ብዙ ሰዎች በስልካቸው ውስጥ የአደጋ ጊዜ ተጠሪ ቁጥር የሚያስቀምጡት ለምንድን ነው?
+43	T	ሁሉም የመንገደኞች አውሮፕላኖች በግዙፍ የአየር ፊኛ መርከቦች ቢተኩ ጥቅሙና ጉዳቱ ምን ይሆናል?
+45	T	ለጀማሪ የሚሆኑ ቀላል የዮጋ እንቅስቃሴዎች የትኞቹ ናቸው?
+51	T	አንዳንድ አገሮች በበጋና በክረምት ሰዓታቸውን የሚቀይሩት ለምንድን ነው?
+54	T	የቫይታሚን ዲ ተጨማሪ እንክብል መውሰድ ይጠቅማል?
+55	T	ከገንዘብ አንጻር ለጡረታ ስዘጋጅ ማሰብ ያለብኝ አምስት ነገሮች ምንድን ናቸው?
+58	T	በ21ኛው ክፍለ ዘመን የጋዜጦች ተነባቢነት ለምን ቀነሰ?
+59	T	በቂ ውሃ መጠጣት ይህን ያህል አስፈላጊ የሆነው ለምንድን ነው?
+63	T	ከስፖርት ውድድር በፊት ምን ብበላ ይሻላል?
+66	T	የምወዳትን ልጅ ለመጀመሪያ ቀጠሮ ለመጠየቅ የሚሆኑ ጥሩ ቦታዎች ጠቁመኝ።
+71	T	ምድር ጠፍጣፋ ናት?
+73	T	ብቻዬን ስጓዝ ጓደኛ ለማፍራት ቀላሉ መንገድ ምንድን ነው?
+79	T	እነዚህን ቃላት "ትልቅ ሰው" ወይም "ልጅ" ብለህ ለያቸው፦ ጨቅላ፣ ሕፃን፣ አያት፣ አዛውንት፣ የሰማንያ ዓመት ሰው፣ ታዳጊ።
+80	T	ውሾች በአብዛኛው ከድመቶች በላይ ተወዳጅ የቤት እንስሳት የሆኑት ለምንድን ነው?
+81	T	ቤት ከገዛሁ በኋላ ከብድሩ ክፍያ ውጪ በየጊዜው የሚመጡብኝ ወጪዎች ምንድን ናቸው?
+86	T	AAC የሚባሉት የንግግር እገዛ መሳሪያዎች ለምን ይጠቅማሉ?
+89	T	የቤት እቃ (ለምሳሌ ወንበር) ስሰራ የሚጠቅሙትንና የማይጠቅሙትን ለይልኝ፦ መዶሻ፣ አስፋልት፣ ጂም፣ እንጨት፣ ሚስማር፣ አረቄ፣ ሜትር፣ ሳንቡሳ።
+91	T	ማኅበራዊ ሚዲያ ምንድን ነው?
+93	T	በዘረ-መል የተሻሻሉ ሰብሎችን በግብርና መጠቀም ምን ጥቅም አለው?
+94	T	እሁድ ቀን ምን ማድረግ ይቻላል? ጥቂት ሀሳቦች ስጠኝ።
+95	T	ከምግቤ ተጨማሪ ፕሮቲን ለማግኘት የተሻለው መንገድ ምንድን ነው?
+102	T	መዋኛ ገንዳ ውስጥ ስንሆን ክብደታችን የቀለለ የሚመስለን ለምንድን ነው?
+107	T	ሊባኖስ የት ነው የምትገኘው?
+108	T	ሶፍትዌር ዴቨሎፐር መሆን አሁን ጥሩ ስራ ነው?
+109	T	በሚዮሲስና በማይቶሲስ መካከል ያለው ልዩነት ምንድን ነው?
+110	T	ማኅበራዊ ሚዲያን ብንተወው ይሻላል?
+111	T	የአንድ ዛፍ ዕድሜ እንዴት ይታወቃል?
+121	T	ስጋ ለማይበሉ ሰዎች ጥሩ የፕሮቲን ምንጮች የትኞቹ ናቸው?
+128	T	የዓለም ጦርነት ማለት ምን ማለት ነው? እስካሁን ስንት የዓለም ጦርነቶች ተካሂደዋል?
+131	T	ቆሻሻ ስለይ ሁልጊዜ ግራ ይገባኛል። እነዚህ የት እንደሚጣሉ ትረዳኛለህ? የለስላሳ ቆርቆሮ፣ የወረቀት ሶፍት እና የወረቀት የቡና ኩባያ።
+140	T	ሱፐርማርኬትና የመንደር ሱቅ ምን ይለያያሉ?
+145	T	ስፖርት ይህን ያህል ተወዳጅ የሆነው ለምንድን ነው?
+151	T	ሙሉ ፒያኖ ስንት ቁልፎች አሉት?
+154	T	የራይድ ወይም የታክሲ መተግበሪያ የጉዞ ዋጋ እንዴት ነው የሚሰላው?
+155	T	ይህን እንቆቅልሽ ፍታልኝ፤ መልሱን አስረዳና ለምን ለማግኘት እንደሚከብድ ንገረኝ፦ እያደረቀ የሚረጥበው ምንድን ነው?
+159	T	በምድር ላይ ሰዎች የሚኖሩበት በጣም ቀዝቃዛው ቦታ የት ነው?
+162	T	ከሌሎቹ የተለየውን ቃል ምረጥ፦ እናት፣ ጓደኛ፣ እህት፣ አባት፣ ወንድም።
+166	T	የትኛው ይከብዳል፦ አንድ ኪሎ ዱቄት ወይስ አንድ ኪሎ ብረት?
+172	T	እነዚህ ነገሮች ደስ የሚል ወይስ መጥፎ ሽታ አላቸው? ቆሻሻ፣ ሎሚ፣ ላብ፣ ባሕር፣ ዝናብ።
+173	T	አንተ መጥፎ ልማድህ ምንድን ነው?
+178	T	በሱፐርማርኬት የወተት ተዋጽኦ መደርደሪያ ላይ የማገኛቸውን አምስት ምግቦች በነጥብ ዘርዝርልኝ።
+191	T	የዞምቢ ወረርሽኝ ቢከሰት ምን ማድረግ አለብን? ቀልድ ቢሆንም እቅድ አውጣልኝ።
+198	T	እነዚህን በሰው ሰራሽና በተፈጥሮ የተገኙ ብለህ መድባቸው፦ ኮምፒውተር፣ ጨው፣ አጥር፣ የዛፍ ጉቶ፣ ኮረብታ፣ አምፖል፣ የሸክላ ማሰሮ፣ በረዶ፣ ቀበሮ፣ የጠረጴዛ ልብስ፣ መጽሔት፣ ሙዚየም።
+201	T	ለቫለንታይን ቀን የሚሰጡ አምስት ስጦታዎችን በዝርዝር ጻፍልኝ።
+202	T	ዓይነት 1 የስኳር በሽታን ለመቆጣጠር የተለመዱ መንገዶች ምንድን ናቸው?
+203	T	እነዚህን እንስሳት በሚበሉት ምግብ መድባቸው፦ አንበሳ፣ ነብር፣ ላም፣ ፍየል፣ አጋዘን።
+206	T	ዓለም አይቶት የማያውቀውን አዲስ እንስሳ አገኘህ እንበል። ምን አይነት እንስሳ ነው? ስሙንስ እንዴት አወጣህለት?
+209	T	የሰው ልጅ ሁለት ጊዜ ጥርስ የሚያበቅለው ለምንድን ነው?
+219	T	ከእነዚህ እንስሳት የትኛው አሁንም አለ፣ የትኛው ጠፍቷል? ስፒኖሳውረስ፣ ዶልፊን።
+221	T	እነዚህ እንስሳት አጥቢ ናቸው ወይስ ወፎች? ኢሙ፣ ጎሪላ፣ ፕላቲፐስ፣ ካንጋሮ፣ ሰጎን፣ ቁራ።
+224	T	ከ1 እስከ 16 ያሉትን ቁጥሮች ጥንድና ጎዶሎ ብለህ ለያቸው።
+225	T	ኖቬምበር 14 የዓለም የስኳር ህመም ቀን ተብሎ የሚታሰበው ለምንድን ነው?
+229	T	የኖቤል ሽልማት ያገኘች የመጀመሪያዋ ሴት ማን ናት? የትኞቹን ሽልማቶች አገኘች?
+231	T	2 አናጢዎች በ3 ሰዓት 4 ወንበር መስራት ከቻሉ፣ 6 አናጢዎች በ6 ሰዓት ስንት ወንበር ይሰራሉ?
+234	T	መኪኖች ሙሉ በሙሉ ራሳቸውን ማሽከርከር ሲጀምሩ የመኪና ዲዛይን ይቀየራል?
+243	T	ምግብ ሳበስል የትኛውን አይነት ጨው ብጠቀም ይሻላል?
+246	T	ፋይናንስ ጥሩ የሙያ ዘርፍ ነው?
+255	T	በአካባቢዬ አዳዲስ ምግብ ቤቶችን የማገኝባቸውን መንገዶች ንገረኝ።
+256	T	ፓይታጎረስ ማን ነበር?
+261	T	የቴክኖሎጂና የኮዲንግ ትምህርት በሁለተኛ ደረጃ ትምህርት ቤት ግዴታ መሆን አለበት?
+267	T	ከማላውቀው ሰው ጋር ወሬ እንዴት መጀመር እችላለሁ?
+272	T	ረጅሙን የክረምት እንቅልፍ የሚተኛው እንስሳ የትኛው ነው?
+274	T	ወደ ማርስ የመጓዝ ዕድል ቢገጥምህ ትሄዳለህ? ለምን?
+277	T	ሰዎች እግር ኳስን ለምን ይወዳሉ?
+284	T	በጣም ጠንካራው ማዕድን የትኛው ነው?
+287	T	አንድ ነገር "ኮምፖስት ይሆናል" ሲባል ምን ማለት ነው?
+288	T	የተለያየ አስተዳደግና ልምድ ያላቸው ሰራተኞች መኖራቸው ድርጅትን የሚጠቅምባቸውን መንገዶች ዘርዝር።
+289	T	የአንድ አገር የበላይ ሕግ የሚባለው ምንድን ነው?
+298	T	እነዚህን ቁጥሮች ከፊትም ከኋላም ሲነበቡ አንድ የሆኑ እና ያልሆኑ ብለህ ለያቸው፦ 1001፣ 202፣ 11፣ 65፣ 76፣ 36፣ 88፣ 999፣ 12345።
+10	D	US TV trivia (X-Files)
+14	D	US-specific (Wisconsin post office)
+18	D	US film trivia
+24	D	US geography trivia
+25	D	US-specific list (Western US states)
+35	D	US comic-book trivia
+36	D	US TV trivia (badge number)
+38	D	cocktail recipe, low value for target users
+39	D	steak preference, low value for target users
+49	D	US-region gardening (Mid-Atlantic)
+52	D	US film trivia
+53	D	US state flower
+60	D	US film trivia
+65	D	Harry Potter trivia
+68	D	fragment, not a request
+69	D	US film trivia
+74	D	asks to judge the honesty of a named real politician
+77	D	US-specific list (New York banks)
+84	D	obscure instrument classification
+85	D	US children's book trivia
+100	D	obscure ship trivia
+101	D	luxury watch trivia
+112	D	India-specific institution
+113	D	loaded political stereotype question
+114	D	US sports trivia (NHL)
+115	D	US sports trivia (NHL)
+116	D	US universities classification
+117	D	US film trivia
+118	D	US university mascot
+123	D	obscure instrument classification
+124	D	band trivia
+127	D	India-specific politics trivia
+134	D	obscure instrument classification
+137	D	US awards trivia
+139	D	US geography (duplicate of capital of California)
+147	D	Dungeons & Dragons trivia
+153	D	surf spot trivia
+156	D	obscure species trivia
+164	D	obscure fiction trivia
+170	D	Pokémon types
+174	D	US TV trivia
+176	D	nonsense option (Palo Alto as a fish)
+179	D	US city activities (Los Angeles toddlers)
+188	D	Pokémon trivia
+189	D	golf trivia
+192	D	US college sports trivia
+193	D	obscure car brands
+204	D	US mortgage rates
+213	D	US TV trivia
+214	D	obscure instrument classification
+218	D	US history trivia (California wine)
+226	D	band trivia
+228	D	US sports trivia
+232	D	guitar trivia
+236	D	obscure instrument classification
+242	D	US TV trivia
+250	D	band trivia
+251	D	India-specific politics list
+254	D	obscure instrument classification
+264	D	Pokémon trivia
+265	D	US TV trivia
+269	D	obscure Indian film genres
+276	D	US flight routes
+280	D	passage with no instruction
+281	D	cocktail recipe
+285	D	US spring break
+290	D	Pokémon trivia
+291	D	not a request
+299	D	passage with no instruction

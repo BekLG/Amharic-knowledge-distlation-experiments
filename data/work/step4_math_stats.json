@@ -1,0 +1,18 @@
+{
+ "dropped_templated": 250,
+ "written": 285,
+ "train": 260,
+ "eval": 25,
+ "types": 28,
+ "style_train": {
+  "casual": 126,
+  "steps": 82,
+  "answer": 52
+ },
+ "status_train": {
+  "ok": 234,
+  "missing": 16,
+  "contradiction": 10
+ },
+ "non_integer_answers": 82
+}

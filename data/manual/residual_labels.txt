@@ -1,0 +1,912 @@
+# residual row index -> code. Code = category letter + source letter [+ ! sensitive] ; D=drop:reason
+# cat: N native_chat K knowledge_qa T translated_instruction E everyday C ethiopia_culture W writing R creative S safety X code_switch F format U summarization
+# src: a aya_dataset g addisgpt q amharic_qa d dolly n nq_open v v2_generated
+0 Na
+# note: short trivia questions without an NQ-style tail were first coded Kn; on review they read as
+# native annotator questions (Aya style) and are coded Na. Kn remains only where a garbled MT needed a fix.
+1 Na
+2 Na
+3 Na
+4 Kd
+5 Td
+6 Td
+7 Kd
+8 Td
+9 Kd
+10 Na
+11 Na
+12 Kd
+13 Na
+14 Na
+15 Na
+16 Na
+17 Ev
+18 Kd
+19 Na
+20 Xv
+21 Na
+22 Kd
+23 Na
+24 Ua
+25 Kd
+26 Ev
+27 Na
+28 Na!
+29 Na
+30 Ng
+31 Kd
+32 Na
+33 Na
+34 Na
+35 Na
+36 D:garbled machine translation (Thanksgiving menu, meaning lost)
+37 Na!
+38 Kd
+39 Na
+40 Kd
+41 Na
+42 Na
+43 Na
+44 Kd
+45 Kd
+46 Kd
+47 Ng!
+48 Na!
+49 Td
+50 D:US-centric guitar brand comparison, low value
+51 Na
+52 Td
+53 D:non-Ethiopian trivia (wonton), low value
+54 Na
+55 Ng
+56 Na
+57 Td
+58 Ng!
+59 Td
+60 D:garbled duplicate of multiple-choice electricity question
+61 D:near-duplicate of hot dog question (row 177)
+62 Td
+63 Kd
+64 Na
+65 Kd
+66 Kd
+67 Td
+68 Na
+69 Ev
+70 Na
+71 Kd
+72 D:US car trivia (muscle car), low value
+73 Na
+74 Na
+75 Na
+76 D:fragment question, meaning unclear
+77 D:garbled, no recoverable request
+78 Td
+79 Ng
+80 Na
+81 Na
+82 Na
+83 Ua
+84 Na
+85 Na
+86 Td
+87 Kd
+88 Na
+89 D:obscure wine-term trivia, low value
+90 Na
+91 Kd
+92 D:follow-up fragment without context
+93 Na
+94 Kd
+95 Na
+96 Na
+97 Na
+98 Kd
+99 Na!
+100 D:US-centric travel logistics
+101 Na
+102 Td
+103 Ev
+104 Na!
+105 Ua
+106 Na
+107 Na
+108 D:US pop-culture trivia (Harry Potter)
+109 Na
+110 Na
+111 Ng!
+112 Td
+113 Kd
+114 Ng
+115 Kd
+116 D:US-specific (deer in yard)
+117 Na
+118 Na
+119 Td
+120 Na
+121 Na
+122 Na
+123 Na
+124 Kd
+125 Na
+126 Na
+127 Kd
+128 Kd
+129 Kd
+130 Na
+131 D:India-specific banking term
+132 Na
+133 Td
+134 D:garbled chat fragment, no clear request
+135 D:duplicate of row 35 multiple-choice with shuffled options
+136 Na
+137 Na
+138 Td
+139 Na
+140 Td
+141 Kd
+142 Kd
+143 Na
+144 Kd
+145 D:machine-translated, foreign doctor name and odd premise
+146 Td
+147 Kd
+148 Ng
+149 Kd
+150 Kd
+151 Kd
+152 Td
+153 Kd
+154 Na
+155 Na
+156 Kd
+157 Na
+158 Ev
+159 Na
+160 Na
+161 Kd
+162 Td
+163 Na
+164 Na
+165 Td
+166 Na
+167 Na
+168 Kd
+169 Td
+170 Na
+171 Kd
+172 Na
+173 Kd
+174 Na
+175 D:car-logo trivia, low value
+176 Na
+177 Na
+178 D:garbled machine-translated dialogue
+179 Td
+180 Kd
+181 Na
+182 Kd
+183 Kd
+184 Kd
+185 Na
+186 Na
+187 Na
+188 Na
+189 Na
+190 Kd
+191 Na
+192 Na
+193 Na!
+194 Td
+195 Ng
+196 D:surfboard prompt, irrelevant for Ethiopian users
+197 Na
+198 Kd
+199 Na
+200 Kd
+201 Na
+202 Na
+203 Na
+204 Td
+205 Na
+206 Na
+207 Na
+208 Td
+209 Td
+210 Td
+211 Na
+212 Td
+213 Na
+214 Na
+215 Kd
+216 Na
+217 Na
+218 Na
+219 Na
+220 Na
+221 Na
+222 Na
+223 Na
+224 Na
+225 Na!
+226 Na
+227 Na
+228 Na
+229 Na
+230 Na
+231 Kd
+232 Kd
+233 Na
+234 Na
+235 Na
+236 Td
+237 Na
+238 Kd
+239 D:UK holiday trivia, low value
+240 Na
+241 Kd
+242 Kd
+243 Na
+244 Na
+245 Na!
+246 Na
+247 Na
+248 D:US holiday trivia
+249 Na
+250 Kd
+251 Na
+252 Na
+253 Kd
+254 Na
+255 Na!
+256 Na
+257 Na
+258 Td
+259 Na
+260 Na
+261 D:cocktail recipe, low value for target users
+262 Na!
+263 Na
+264 Na
+265 D:niche vendor product (Databricks), low value
+266 Kd
+267 Kd
+268 Na
+269 Na
+270 Td
+271 Na
+272 Na
+273 Kd
+274 Ng
+275 Na
+276 Na
+277 Na
+278 Ev
+279 Na
+280 Na
+281 Kd
+282 Na
+283 Td
+284 Na
+285 Na
+286 Na
+287 Td
+288 D:ski passes irrelevant for Ethiopian users
+289 Kd
+290 Na
+291 Na
+292 Na
+293 Na
+294 Na
+295 Na
+296 Na
+297 Ng
+298 D:US ice-cream toppings, low value
+299 Kd
+300 Na
+301 Na
+302 Na!
+303 D:Western shoe-style trivia, low value
+304 Na
+305 D:banjo vs ukulele, low value
+306 Td
+307 Na
+308 Kd
+309 D:lawn mowing, irrelevant for most target users
+310 Na
+311 Na
+312 Na!
+313 Kd
+314 Kd
+315 Na
+316 Na!
+317 Na
+318 Td
+319 Kd
+320 Na
+321 Na
+322 Na
+323 Kd
+324 Kd
+325 Kd
+326 Na
+327 D:US currency trivia
+328 Kd
+329 D:dog-breed trivia (Jindo), low value
+330 Kd
+331 Na
+332 D:Western cooking trivia, low value
+333 Na
+334 Kd
+335 Na
+336 Na
+337 Na
+338 Na
+339 Na
+340 Na
+341 Na
+342 Kd
+343 D:football-manager trivia, low value
+344 Na
+345 Kd
+346 Kd
+347 D:fragment, request incomplete
+348 Td
+349 Kd
+350 Na
+351 Kd
+352 Na
+353 Kd
+354 Na
+355 Na
+356 D:obscure Hebrew etymology trivia
+357 Td
+358 Na
+359 Na
+360 Kd
+361 Kd
+362 Na
+363 D:US TV trivia
+364 Na
+365 Td
+366 Ng
+367 Na
+368 Na
+369 Td
+370 D:US finance term (RSU), low value
+371 Na
+372 Na
+373 Na!
+374 Kd
+375 Na
+376 Na
+377 D:celebrity nationality trivia
+378 Na
+379 Na
+380 Ev
+381 Na
+382 Kd
+383 Kd
+384 Kd
+385 Na
+386 Na
+387 Na
+388 D:India-specific banking code
+389 Na
+390 Na
+391 Kd
+392 Na
+393 Kd
+394 Td
+395 Na
+396 Na
+397 Na
+398 Na
+399 Na
+400 Na
+401 Na
+402 Na
+403 Na
+404 Na
+405 Na
+406 Na
+407 Kd
+408 D:US film trivia (Superman cast)
+409 Na
+410 Na
+411 Td
+412 Na
+413 Ua
+414 Td
+415 Na
+416 Na
+417 Na
+418 Na
+419 Na
+420 Kd
+421 Td
+422 Na
+423 Na
+424 D:US film trivia (Star Wars release)
+425 Na
+426 Na
+427 Kd
+428 Na
+429 Ev
+430 Na
+431 Kd
+432 Kd
+433 Kd
+434 Na
+435 Na
+436 Na
+437 Ev
+438 Na
+439 Na
+440 Td
+441 Na
+442 Na!
+443 D:football trivia (England coach 1977)
+444 Na
+445 Na!
+446 Na
+447 D:fragment referring to unknown 'Liz'
+448 D:near-duplicate of row 211
+449 Ev
+450 Na
+451 Na
+452 Na
+453 Na
+454 Na
+455 Na
+456 Na
+457 D:golf trivia, low value
+458 Kd
+459 Kd
+460 Kd
+461 Kd
+462 Na
+463 Kd
+464 Td
+465 Na!
+466 D:flute vs piccolo, low value
+467 Na
+468 Ng
+469 Ev
+470 Kd
+471 Na
+472 Na
+473 Na
+474 Na
+475 Na
+476 Td
+477 Kn|የሰውነታችን ትልቁ አካል የትኛው ነው?
+478 D:consulting case-interview prep, niche
+479 Kd
+480 Na!
+481 Kd
+482 D:English collective-noun trivia, low value
+483 Na
+484 Na
+485 Na
+486 D:car-company trivia
+487 Na
+488 Na
+489 Na
+490 Kn|ፌመር የሚባለው አጥንት በየትኛው የሰውነት ክፍል ይገኛል?
+491 Td
+492 D:US sports trivia (eye black)
+493 D:near-duplicate of row 219
+494 Kd
+495 Na
+496 Kd
+497 Kd
+498 Na
+499 Kd
+500 Td
+501 D:sports record trivia, low value
+502 D:garbled, meaning unclear
+503 Kd
+504 D:underspecified fragment
+505 Na
+506 Na
+507 Na
+508 Kd
+509 Na
+510 Na
+511 Kd
+512 D:garbled premise (US constitution), meaning unclear
+513 Ng
+514 D:US sports trivia
+515 Td
+516 D:follow-up fragment without context
+517 D:Western cooking trivia
+518 D:Hebrew term trivia, low value
+519 Na
+520 Na
+521 Na
+522 Na
+523 Na
+524 Kd
+525 Na
+526 Na
+527 D:US-specific time-zone question
+528 Na
+529 D:foreign restaurant chain trivia
+530 Na
+531 Na
+532 Na
+533 Td
+534 Na
+535 Na!
+536 Na
+537 Kd
+538 Kd
+539 Na
+540 Na
+541 D:near-duplicate of row 453
+542 Na
+543 Kd
+544 D:Australia-living pros, low value
+545 Na!
+546 Na
+547 Na!
+548 Td
+549 Na
+550 Na
+551 D:cat-breed trivia
+552 Kd
+553 D:football trivia (1986 FA cup)
+554 Na
+555 D:garbled translation, meaning unclear
+556 Na
+557 Na
+558 Na
+559 D:US TV trivia
+560 Na
+561 Na
+562 Kd
+563 Na
+564 Na
+565 D:cocktail recipe
+566 Td
+567 Td
+568 Na
+569 Na
+570 Na
+571 Na
+572 Na
+573 Kd
+574 Td
+575 Na
+576 Na
+577 Na
+578 Kd
+579 D:foreign company trivia
+580 D:near-duplicate of row 0-series Michael Jackson DVD question in train
+581 Na
+582 Kn|ሕፃናት ሲወለዱ የሌላቸው አጥንት የትኛው ነው?
+583 Na!
+584 Na
+585 Na
+586 Na
+587 Na
+588 Na
+589 Na
+590 Na
+591 Na
+592 D:near-duplicate of row 412
+593 D:garbled voice transcription, no clear request
+594 Na
+595 Na
+596 Na
+597 D:literature trivia (Brontë), low value
+598 Na
+599 Na
+600 Na
+601 Kd
+602 Kd
+603 D:snowboard wax, irrelevant
+604 Na
+605 Kd
+606 Na!
+607 Na
+608 Na
+609 Na
+610 Kd
+611 Ev
+612 Na
+613 Na
+614 D:fly fishing, low value
+615 Kd
+616 Na
+617 Na
+618 D:obscure geography trivia (Kosovo peak)
+619 Na
+620 Ev
+621 Na
+622 D:near-duplicate of row 22
+623 Kd
+624 D:US-specific scenario (car on lawn)
+625 D:machine-translated with foreign name, low value
+626 Td
+627 Na
+628 Na
+629 Kd
+630 Na
+631 Td
+632 D:US time-zone question (duplicate topic)
+633 Na
+634 D:near-duplicate of row 146
+635 D:tennis trivia
+636 Na!
+637 Kd
+638 Ev
+639 Na
+640 Td
+641 D:near-duplicate of row 220
+642 Na
+643 Kd
+644 Kd
+645 D:US history trivia (Kennedys)
+646 D:Western cooking (steak)
+647 Kd
+648 Na
+649 Na
+650 Na
+651 Na
+652 D:Disney film trivia
+653 Na!
+654 Td
+655 D:foreign cuisine trivia
+656 Na
+657 Na
+658 Na
+659 Na
+660 D:tattoo-design trivia
+661 Na
+662 D:obscure historical geography trivia
+663 Kd
+664 Na
+665 Na!
+666 Na
+667 Na
+668 Na
+669 Td
+670 Na
+671 Na
+672 Na
+673 D:sauna, irrelevant
+674 Na
+675 Na
+676 Ev
+677 Na
+678 D:US geography trivia
+679 Ev
+680 Kd
+681 D:Mexican holiday translation trivia
+682 Kd
+683 Kd
+684 D:US university trivia
+685 Kd
+686 Na
+687 Kd
+688 Na
+689 Na
+690 Td
+691 Na
+692 Na
+693 Kd
+694 Na!
+695 Na
+696 D:Western cooking (fresh pasta)
+697 Na
+698 Na
+699 Kd
+700 Ev
+701 Na!
+702 Kd
+703 Kd
+704 Td
+705 Na
+706 Na
+707 Na
+708 Na
+709 Na
+710 D:dog-breed comparison, low value
+711 Na
+712 Na
+713 Kd
+714 Na
+715 Td
+716 Na!
+717 Na
+718 Td
+719 Na
+720 Kd
+721 Kd
+722 Na
+723 Na
+724 D:garbled abbreviations, meaning unclear
+725 D:English food-term trivia (venison)
+726 Kd
+727 D:obscure national-day trivia
+728 D:garbled machine-translated fiction excerpt
+729 D:unclear term, no recoverable meaning
+730 Na
+731 Na
+732 Na!
+733 Na
+734 Na
+735 Kd
+736 Na
+737 Na
+738 Td
+739 Kd
+740 Td
+741 Na
+742 Kd
+743 Na
+744 Na
+745 Kd
+746 Na
+747 D:niche game trivia
+748 Na
+749 Na!
+750 Na
+751 D:surfing, irrelevant
+752 Kd
+753 Na
+754 D:near-duplicate of row 235
+755 Na
+756 Na
+757 Na
+758 Kd
+759 Na
+760 Kd
+761 Na
+762 Na
+763 Na
+764 Na
+765 Kd
+766 Na
+767 D:Australian TV trivia
+768 Na
+769 Kd
+770 Na
+771 D:US film trivia
+772 Td
+773 Td
+774 Na
+775 Na!
+776 Kd
+777 Td
+778 D:niche marketing question
+779 Na
+780 Kd
+781 Na
+782 D:snowboard vs ski boots, irrelevant
+783 Kd
+784 Kd
+785 Na
+786 Kd
+787 Na
+788 Kd
+789 D:US film trivia
+790 Kd
+791 Td
+792 D:foreign cuisine trivia (hummus)
+793 D:near-duplicate of row 510
+794 Kd
+795 Ng
+796 Td
+797 D:foreign cuisine (aioli)
+798 D:US currency trivia
+799 Na
+800 Na
+801 Na
+802 Na
+803 D:propane grill, irrelevant
+804 D:foreign cuisine (guacamole)
+805 Kd
+806 D:near-duplicate of row 477
+807 D:garbled, meaning unclear
+808 Kd
+809 Na
+810 Td
+811 Na
+812 Td
+813 D:near-duplicate of row 293 (Argentina passage)
+814 Kd
+815 Na
+816 D:garbled fragment
+817 Na
+818 Na
+819 Na
+820 D:India-specific payment term
+821 Ng
+822 D:obscure biochemistry term
+823 D:bowling trivia
+824 Kd
+825 Kd
+826 Na
+827 Na
+828 Na
+829 Na
+830 Kd
+831 Kd
+832 Na
+833 Ev
+834 Td
+835 Ev
+836 Kd
+837 Kd
+838 Na
+839 Na
+840 Td
+841 Na
+842 Na
+843 Na
+844 Kd
+845 Td
+846 Na
+847 Kd
+848 Td
+849 Na
+850 D:US state-bird trivia
+851 Na
+852 Na
+853 D:foreign food brand trivia
+854 Ua
+855 D:truncated, context missing
+856 Kd
+857 Na
+858 Na
+859 Na
+860 D:near-duplicate of row 81
+861 Na
+862 Na!
+863 Td
+864 Na
+865 Na
+866 Kd
+867 Na
+868 Kd
+869 Na
+870 Na
+871 D:near-duplicate of row 510
+872 Ev
+873 Na
+874 Na
+875 Na
+876 Na
+877 Na
+878 D:guitar vs ukulele, low value
+879 Na
+880 Na
+881 Na
+882 Na
+883 Na
+884 Na
+885 D:US film trivia (Dumbledore actor)
+886 Na!
+887 Kd
+888 Kd
+889 Na
+890 Kd
+891 D:obscure history trivia (Viking currency)
+892 D:near-duplicate of row 32
+893 Na
+894 Kd
+895 Na
+896 Kd
+897 Td
+898 D:video-game trivia
+899 Na
+900 Td
+901 Td
+902 Na
+903 Kd
+904 Td
+905 Kd
+906 Na

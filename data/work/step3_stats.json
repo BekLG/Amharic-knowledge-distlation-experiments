@@ -1,0 +1,27 @@
+{
+ "input_rows": 1930,
+ "situations": 390,
+ "verdicts": {
+  "keep": 1153,
+  "drop": 762,
+  "rewrite": 15
+ },
+ "kept_rows": 1168,
+ "two_line_pairs_kept": 933,
+ "merged_pairs": 439,
+ "merged_share": 0.471,
+ "label_rows": 180,
+ "label_removed": 135,
+ "label_removed_share": 0.75,
+ "rows_with_dont_constraint": 0,
+ "dont_share": 0.0,
+ "max_instruction_line_uses": 4,
+ "category": {
+  "code_switch": 60,
+  "everyday": 490,
+  "creative": 60,
+  "safety": 90,
+  "writing": 240,
+  "ethiopia_culture": 228
+ }
+}

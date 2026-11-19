@@ -1,0 +1,166 @@
+# knowledge_tail row index -> K keep | S safety | D:reason ; optional |fixed question
+0 K|"ባካ" የሚለው የጃፓንኛ ቃል ምን ማለት ነው?
+1 K
+2 D:obscure Egypt tourism logistics
+3 K
+4 K
+5 D:India-specific trivia
+6 K
+7 S
+8 D:India-specific trivia
+9 K
+10 K
+11 D:garbled premise (Mexico independence 'where')
+12 D:India-specific trivia
+13 S
+14 K
+15 K
+16 K
+17 D:India-specific trivia, garbled name
+18 K
+19 K
+20 D:India-specific trivia
+21 K
+22 D:India-specific trivia
+23 D:garbled anatomy translation
+24 K
+25 K
+26 D:India-specific trivia
+27 K
+28 K
+29 K
+30 D:obscure (Isle of Man capital)
+31 K
+32 D:ill-posed question (father of English language)
+33 D:India-specific trivia
+34 K
+35 S
+36 K
+37 D:India-specific trivia
+38 K
+39 D:India-specific trivia
+40 K
+41 K
+42 K
+43 K
+44 D:India-specific trivia
+45 K
+46 K
+47 D:obscure astronomy date trivia
+48 S
+49 D:India-specific trivia
+50 S
+51 K
+52 S
+53 K
+54 D:India-specific trivia
+55 K
+56 K
+57 K
+58 K
+59 K
+60 K
+61 K
+62 K
+63 S
+64 D:obscure South Africa holiday trivia
+65 D:India-specific trivia
+66 D:obscure geography (Costa Rica peak)
+67 K
+68 K
+69 S
+70 K
+71 D:India-specific trivia
+72 K
+73 D:India-specific trivia
+74 D:India-specific trivia (Idukki dam)
+75 K
+76 K
+77 D:India-specific trivia
+78 D:India-specific trivia
+79 K|ፊቡላ የሚባለው አጥንት የሚገኘው በእግር ውስጥ የት ነው?
+80 K
+81 S
+82 S
+83 K
+84 K
+85 K
+86 D:obscure mythology trivia
+87 S
+88 K
+89 K
+90 S
+91 K
+92 K
+93 K
+94 D:obscure daylight-saving trivia
+95 K
+96 K
+97 D:India-specific trivia
+98 D:India-specific trivia
+99 K
+100 K
+101 K
+102 D:obscure independence-date trivia
+103 K
+104 D:garbled (national dress 'Gho')
+105 K
+106 D:obscure Philippines trivia
+107 K
+108 D:India-specific trivia
+109 K
+110 D:India-specific trivia
+111 D:India-specific trivia
+112 K
+113 K
+114 D:India-specific trivia
+115 K
+116 K
+117 K
+118 K
+119 K
+120 D:India-specific trivia
+121 D:India-specific trivia
+122 D:India-specific trivia
+123 K
+124 D:India-specific trivia
+125 K
+126 K
+127 K
+128 D:India-specific trivia
+129 S
+130 K
+131 K
+132 K
+133 D:India-specific trivia
+134 K
+135 K
+136 K
+137 K
+138 K
+139 S
+140 K
+141 K
+142 D:obscure daylight-saving trivia
+143 K
+144 K
+145 K
+146 K
+147 K
+148 K
+149 K
+150 K
+151 D:obscure Australia trivia
+152 K
+153 S
+154 K
+155 D:obscure daylight-saving trivia
+156 D:India-specific trivia
+157 K
+158 K
+159 K
+160 D:obscure Canada trivia
+161 K
+162 K
+163 K
+164 K

@@ -1,0 +1,20 @@
+{
+ "rows": 955,
+ "loaded_flag": 11,
+ "political": 121,
+ "detokenized": 15,
+ "instruction_varied": 823,
+ "removed_source_credit": 47,
+ "split_merged_sentences": 81,
+ "removed_url_sentence": 5,
+ "removed_trailing_dateline": 7,
+ "political_share_of_news": 0.202,
+ "max_instruction_uses": 8,
+ "by_category": {
+  "summarization": 305,
+  "translation_en_am": 250,
+  "news_classification": 100,
+  "translation_am_en": 200,
+  "writing": 100
+ }
+}

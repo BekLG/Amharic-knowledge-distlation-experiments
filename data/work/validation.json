@@ -1,0 +1,81 @@
+{
+ "1_schema": {
+  "pass": true,
+  "problems": []
+ },
+ "2_unique_ids": {
+  "pass": true,
+  "duplicates": [],
+  "bad_format": []
+ },
+ "3_counts": {
+  "pass": true,
+  "train": 4961,
+  "eval": 300,
+  "out_of_range": {},
+  "eval_mismatch": {},
+  "eval_latin_am": 18
+ },
+ "4_duplicates": {
+  "pass": true,
+  "exact_duplicates": 0,
+  "near_dup_train_pairs": 0,
+  "near_dup_train_eval_pairs": 0,
+  "near_dup_within_eval": 0,
+  "eval_lines_shared_with_train": []
+ },
+ "5_repetition": {
+  "pass": true,
+  "max_line_uses": 8,
+  "max_line": "የጽሑፉን ቁልፍ መረጃዎች በሦስት ነጥቦች አቅርብ።",
+  "max_five_word_opening": 11,
+  "opening": "ስም፣ ብዛት፣ ነጠላ ዋጋ በብር፦",
+  "limit_opening": 49,
+  "generated_with_dont_constraint_share": 0.0
+ },
+ "6_english_requests": {
+  "pass": true,
+  "missing": []
+ },
+ "7_length": {
+  "pass": true,
+  "max_tokens": 950.3,
+  "over_1500": [],
+  "share_over_600": 0.005,
+  "share_one_liners": 0.331,
+  "one_liner_definition": "single line of at most 9 words (about one phone-screen line in Amharic)",
+  "share_single_line_any_length": 0.631
+ },
+ "8_no_pii_urls": {
+  "pass": true,
+  "rows": []
+ },
+ "9_language_mix": {
+  "pass": true,
+  "am": 0.8256,
+  "en": 0.0907,
+  "mixed_plus_latin": 0.0837,
+  "counts": {
+   "am": 4096,
+   "mixed": 265,
+   "en": 450,
+   "latin_am": 150
+  }
+ },
+ "10_math_answers": {
+  "pass": true,
+  "missing": [],
+  "math_rows": 285
+ },
+ "11_safety_listed": {
+  "pass": true,
+  "unlisted": [],
+  "listed_total": 224
+ },
+ "x_all_inputs_accounted": {
+  "pass": true,
+  "unaccounted": [],
+  "inputs": 5300
+ },
+ "all_pass": true
+}

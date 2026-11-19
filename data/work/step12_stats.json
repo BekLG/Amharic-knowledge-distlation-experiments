@@ -1,0 +1,26 @@
+{
+ "train": 4961,
+ "eval": 300,
+ "near_dup_train": 1,
+ "shared_line_eval": 3,
+ "out_of_range": {},
+ "by_category": {
+  "knowledge_qa": 350,
+  "native_chat": 500,
+  "summarization": 305,
+  "news_classification": 100,
+  "translation_am_en": 200,
+  "translation_en_am": 250,
+  "writing": 479,
+  "english_instruction": 200,
+  "translated_instruction": 220,
+  "format": 118,
+  "code_switch": 220,
+  "everyday": 850,
+  "latin_amharic": 150,
+  "safety": 150,
+  "math": 260,
+  "ethiopia_culture": 479,
+  "creative": 130
+ }
+}

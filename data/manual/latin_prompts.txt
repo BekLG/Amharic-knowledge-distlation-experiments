@@ -1,0 +1,165 @@
+# One romanized-Amharic prompt per line, written the way people type on phones:
+# mixed ñ / gn / ny, e/a swaps, dropped vowels, English words. \n = newline.
+selam, zare timhirt lemjemer fekr yelegnim. min larg?
+Slm endet neh? ye sira melekekt tekebelku gin tirgumu algebagnim, asredagn
+be telefon bezu gize atifalehu, mnm sira alserahum. min tmkrlgnal?
+Ye metsihaf manbeb lmad lijemr efeligalew. kemn lijemr?
+ene ena guadegnaye bezih guday altesmamanm. ende guadegna mekrgn
+bota lemekeyer asbalew gin yet ende mjemr alawkm
+ye bet kiray ena ye migb wechi bezabign. budget endet lawta?
+wetat nibab kibeb lemekfet asibalehu, min min yasfelgal?
+le sport ruch lijemr efelgalehu gin kezih befit alrunm. ye 2 samnt plan sitegn
+birr mekoteb lijemer efelgalew gin weru sayalk birr yalkal
+ye sew sim be kelalu eresalehu, mn ladrg?
+ye buna mekebeya ke coffee cup gar endemin yimetatenal? lemn wagaw yileyayal
+yezare zena tikikl mehonun endet aregagtalehu? facebook lay bzu wshet ale
+le bego fekad sira gize limedb efelgalehu, yet lijemr?
+ye timhirt bet sira bezu honobignal, ena dekmognal
+computer lemegzat min mayet endalebgn alawkm. 30,000 birr budget alegn
+guadeñaye ketero yarefdal, ene degmo mekoyet altechlm. mn libelew?
+ye sew fit menager yasferagnal. presentation alebign next week
+Lemin sewoch ye lelit enkilf yasfelgachewal? sint seat metegnat alebn
+Ye internet package bezu ylkal, ende mekentes ychalal?
+Selam! ye lijen lidet party lazegaj new. 15 lijoch yimetalu, mn lazegaj?
+enat ena abate yitelalu, ene degmo mehal negn. betam deketognal
+ye shirt kolar teshefnoal, mn latib?
+Sint birr lmetateb? ye emergency fund lemesrat efelgalew
+mn aynet sira kebet hone mesrat yichalal? lj alegn sle hon wuch mewtat alchlm
+endet yale CV lazegaj? first job new
+ye bet kiray kontrat mefrem alebgn, mn mayet alebgn befit?
+abate sukar beshta alebachew. mn aynet migb yishalachewal?
+Ye kesel tibs aserar ngerg, simple yihun
+injera sigagr yisebaral, lemn yihon? lit wey mtad new?
+shiro wet ende mnseraw? le 4 sew
+ye doro wet le hulet sew bicha endet laserr?
+Atkilt besat lay mtekel efelgalehu, bota tnsh new
+ye lijoch Amharic fidel memar endet lastemr? 6 ametu new
+leji math yasferawal, endet laberetaw?
+Ye university entrance exam yemiyakebid ymeslegnal, endet lzegaj?
+selam. ye sira interview new lemihedew bekaabbi min lilebs?
+ye boss email melse alserahum 3 ken honoal, ahun mn lbel?
+ye wedajen birr tebedrku gin amta mekfel alchalkum. endet lnegerw?
+tikakil wede gym mehed jemrku, gin sewnete yamegnal. normal new?
+yeras metemamen ende mamtat yichalal? betam ayinafar negn
+Ye Telegram channel kefete 200 sew alegn. endet lasadg?
+yene business Instagram page lay sales lmechmer mn ladrg?
+dabo bet lekfet asbalew. mjemerya min lawke?
+taxi meyaz ende ychalal? license yalew sew negn
+ye Bajaj sira trf yasgegnal? ena mn yhon wechu
+ye Ethio telecom bill betam bzu new zendro. lemn yihon?
+telebirr lay birr bestet lsew lakku, mn lyarg?
+Ye bank account password resahu, mobile banking aylkfetm
+WiFi ye bet lay bzu gize yitefal, mn ladrg?
+slke tnsh new storage ylal. photowoche endayteftu
+laptop yimokal, fan yichohal. mn hon?
+ye Excel formula alegebagnim, VLOOKUP mn madreg new?
+python memar efelgalew gin math ayichlm. ychalal?
+ye ehte serg new, le seregna mn aynet sitota yishalal?
+ye Timket beal le wuch sew endet laskeres?
+Meskel beal lemn ykeberal? letiny lij asredalign
+ye Ethiopia ze-men akotater ena ye ferenj lemn yileyayal?
+gena lay mn aynet bahl alen? ye kedmo zemen endet neber
+Ashenda beal mndn new? lemn yikebral?
+le irreecha beal mn lbs ylbesal? kelal yihun
+ye agerachn buna ceremony le friends lamasayet efelgalew
+Lalibela lemhed asbalew, sint ken yfejal? budget wise
+Gondar ena Bahir Dar 4 ken ychalal? itinerary sitegn
+Hawassa wede mhed efelgalew, mn mayet alebign?
+Arba Minch yalut abaya ena chamo mn yileyayachewal?
+ye Amharic misale "ye kerebe yisemal" mn malet new?
+"Sew bemadrg ytawekal" yemilew yetem misale new? trgumu
+ene nefsun memesgen efelgalew, ye tselot gize esta sitegn
+ye ehte lj betam yaltal, endet lmekrat?
+Bet wust yalu sewoch hulum slk yayalu, mn ladrg?
+ye bal ena ye mist wuyiyit betam tekeyyeral, mn lmker?
+ye ferenj migb mebsel ebelalehu gin injera yinafkegnal haha
+Le Ramadan ftir mn aynet migb ladrg?
+ye fasika semon mn mn ybelal? ye tsom kemr behwala
+Abiy guder sefer lay yalew gebeya bezu sew ale? endet newe ygzaw
+Mercato wust mn mn ygegnal? le mjemerya gize mehed
+yalchal dinch endet ymetetal? wagaw sint yihonal
+ye ateria buna betam yemeral. mn ladrg?
+bekelal tibs lmesrat sint sega lgza le 6 sew?
+tef ena sndie dabo yetu new yemiyashalew le tena?
+diabetes alebign, injera mbalat ychalal?
+blood pressure leka sint mehon alebet? normal sint new
+raseen betam ymotognal ena ayne ybertal, mn ladrg?
+Ye lij tikusat 39 dereja new, mn larg ahun?
+ye neksat kemr behwala yalew bzu gize yefelekegnal. normal new?
+ye tsom gize protein endet agegnalew?
+Ye amet resolution lmesrat efelgalew gin hulgize yaktelal
+mn aynet metsihaf lanbeb? Amharic novel btmekrgn
+ye Haddis Alemayehu "Fikir Eske Mekabir" mn yimeslal? achir
+le lij teret ngerng, ye 5 amet lij new
+ye tirguam sira lmjemr efelgalew, English ena Amharic chilalew
+ye ferenj agar scholarship lmefleg mn mn ydegal?
+Visa interview alebign, mn ytekuwal?
+ye DV lottery yasfelgal? ende mmolat alebn
+nurse negn, ye mata shift sira betam deketognal. mn ladrg?
+teacher negn, temariwoch class lay aydemetum. mn ladrg?
+gebere negn. ye zenib gize ttekeyrual, mn mzerat alebgn?
+ye kebt beshta ayalew, lam wetet altesetm. mn ladrg?
+dorowoch ynkulal mn bmegb ychalal? 50 doro alegn
+ye mar nb lmrbat efelgalew, sint kefo ljemr?
+driver negn ena ye mekina gomma bezu ytechal. ende mekenes?
+ye Ethio telecom airtime bemestat ende sira ljemr?
+shop alegn, customers dubie kefelu, ende lkesbew?
+ye ezra lji sira kebet lay bicha new, school ayheed. mn lbelew?
+ye gorebet sewoch mata betam yichohalu, sayasqeyimachew mn lbelachew?
+ye kirayi bet balebet water ayasgebam, mn mbet alegn?
+ye lij tmhrt bet kefel lemn bezu?? lela amarach ale?
+mn aynet slk lgza? 15k birr bicha alegn
+iPhone wey Samsung? le photo ena battery
+online sira ytsiralg yemilu ads ale, tamagn nachew?
+gmail account ende kfet?
+ye YouTube channel lkefet efelgalew. mn lay lsra?
+TikTok lay video ende ladrg yalemenafer?
+Ai yemilew neger sira yasaxal? ende teteqemen?
+chatgpt ena ante mn tlayayalachu?
+ye mobile app lmesrat sint gize yfejal? idea alegn
+le startup bder ygegnal? yet ljemr
+selam, smie Hana new. ye birthday message le best friend tsafilign
+le enate ye enkuan aderesesh message tsaflgn, Amharic bihon
+ye fikir dabdabe tsafilgn, betam romantic aydelem gin
+le mnager yemilak ye fiqad tiyake email tsafilgn
+le aleqa yemilak ye ehmem fqad tyaqe, 2 ken
+ye wedaj lj tmrt ayagebam, leqso gize mn lbel?
+le gorebete ye yikirta tiyake message, wusha alechoh new
+ende guadegna hone ye ras mtemamen mkr sitegn
+Bet wust tnsh atkilt mtekel lijemr, mn ytsekel?
+ye kafe biznes plan sitegn simple
+50k birr kapital alegn, mn biznes ljemr?
+ye kaf aynet mn mn nachew? cappuccino ena macchiato mn yleyayal
+ye Amharic grammar "ye-" ena "be-" mechie new yemitekemu?
+"seberku" ena "teseberku" mn ylayayal?
+englizgna lmmar app btmekrgn? free bihon
+Selam, ye tmhrt bet sira ale: "ye akababi bekel" yemil ye 1 page tsuhuf, mjemerya sitegn
+sinima bet mehed efelgalew gin bcha, aswerra new?
+ke 2 sewoch maln mmreta alebgn, ende lwesn?
+ye ehte bal betam yichohal, ehte gn ayitnagerim. mn ladrg?
+ye bet ser hulu enen yitebkal, sewoch ayredum
+salary ken sayders birr yalkbgnal, ende lakfafel?
+ye lijen bicycle mendat lastemr, mn ytekelal?
+sinkurt ende tekelekyo ytedebek? ye bet sira tips
+ye leqso program le mjemerya gize mn yselal?
+2 bet kiray amarach alegn: andu karib gin wd, andu ruq gin rkash. yetu yishalal?
+mekina lgza new, used wey new? 1.2M budget
+ye bet mesreja permit ende ygegnal?
+ye Fayda ID lmawtat mn ytebeqal?
+passport rnew lmadreg online ychalal?
+ye bank loan lmawtat mn mn sened ydegal?
+selam, leji fever alew 38.5, mn ladrg ahun?
+ye university application deadline yalefebign, lela amarach ale?
+ene ena wendme ye abatachn bet lay entalalen, ende enfetaw?
+ye habesha kemis ende ytatebal? ye tilf alew
+ye kebele mewawecha sint new? ye bet sint sew new memezgeb yalebet
+bezu gize rasen ymotognal ke computer fit sihon
+le lijoch hulet aynet migb enchl ende? ande gize bicha new yemiyabslew
+gebeya lay ye tef waga betam chemrual, mn letekaw?
+ye wedaje lij serg new, mn sitota lsit? 3000 birr budget
+abate ye phone password resut, ende enkefetlachew?
+ye engliz kuankua lememar ye 30 ken plan sitegn
+ye mesrya bet aleqa betam yichohal, mn ladrg?
+bet wust ayt alu, kemikal sayhon mn letekem?
+ye yenet bota lay internet ayseram, offline mn lsra?
+zare ye mejemerya ken new be adis sira, nervous negn 😬

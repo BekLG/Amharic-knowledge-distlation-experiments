@@ -1,0 +1,73 @@
+# Final top-up to bring train within 5,000 ± 50.
+## everyday/home
+የምንኖርበት አፓርትመንት ሊፍት ሁልጊዜ ይበላሻል፣ ነዋሪዎች ተሰብስበን ለአስተዳደሩ ምን እንጠይቅ?
+በቤቴ የሚገኙ ኤሌክትሪክ ሶኬቶች ሲነኩ ይሞቃሉ፣ ኤሌክትሪሻን እስኪመጣ ምን ልጠንቀቅ?
+## everyday/money_budget
+በዓመት አንድ ጊዜ የሚመጣውን የልጆች ትምህርት ቤት ምዝገባ ወጪ ከአሁኑ እንዴት ላዘጋጅ?
+## everyday/work_career
+የስራ ቦታዬን ብቀይር የጡረታ መዋጮዬ ምን ይሆናል?
+ከአለቃዬ ጋር ስለ ስራ ጫና ለማውራት ቀጠሮ እንዴት ልጠይቅ?
+## everyday/study
+ልጄ የእንግሊዝኛ ፊደል ይቀላቅላል (b እና d)፣ ይሄ የተለመደ ነው?
+## everyday/health_wellbeing
+ረጅም የአውቶቡስ ጉዞ ላይ እግሬ ያብጣል፣ ምን ላድርግ?
+## everyday/family_parenting
+ልጆቼን ስለ ገንዘብ ዋጋ ለማስተማር በቤት ውስጥ ምን ጨዋታ እንጫወት?
+## everyday/tech_help
+ስልኬ ሲጠፋ ከርቀት ቆልፌ ማጥፋት እችላለሁ? ቀድሜ ምን ማዘጋጀት አለብኝ?
+## ethiopia_culture/holidays
+የጾመ ነነዌ ጾም ምንድን ነው? ስንት ቀን ይጾማል?
+የከተራ በዓል ከጥምቀት በምን ይለያል?
+## ethiopia_culture/food_coffee
+ዳጣ እና አዋዜ በምን ይለያያሉ? ከምን ምግብ ጋር ይቀርባሉ?
+በገጠር እንግዳ ሲመጣ እግር ማጠብ ለምን የክብር ምልክት ሆነ?
+## ethiopia_culture/music_arts
+የአዝማሪ ማሲንቆና የመሰንቆ ልዩነት አለ ወይስ አንድ ናቸው?
+ሆያ ሆዬ ዜማ ውስጥ የሚባሉት ስንኞች ምን ትርጉም አላቸው?
+## ethiopia_culture/language_script
+"ጅብ ከሄደ ውሻ ጮኸ" የሚለው ምሳሌ በምን ሁኔታ ይጠቀሳል?
+የአማርኛ ቀን መቁጠሪያ ላይ የሳምንቱ ቀናት ስሞች ከየት መጡ?
+## ethiopia_culture/places_heritage
+የጎንደር የአፄ ፋሲል መዋኛ (ጥምቀተ ባሕር) በጥምቀት ጊዜ ለምን ይሞላል?
+የይሃ ቤተ መቅደስ ፍርስራሽ ለምን ታሪካዊ ነው?
+ሲሚን ተራራ ላይ የሚታዩት ዋልያና ቀይ ቀበሮ ለምን ብርቅዬ ተባሉ?
+## ethiopia_culture/traditions_social
+በአርሲ ኦሮሞ ባህል የ"ሲንቄ" ሥርዓት ለሴቶች ምን ትርጉም አለው?
+ሙሽሪት ከሰርግ በኋላ "መልስ" የምትሄደው ለምንድን ነው?
+በገጠር "አፈርሳታ" የሚባለው ባህላዊ የምርመራ ዘዴ ምን ነበር?
+## ethiopia_culture/history
+የአፄ ሱስንዮስ ዘመን በሃይማኖት ታሪክ ውስጥ ለምን ይታወሳል?
+## writing/formal_letters
+ለኮሌጁ የትምህርት ክፍያ በክፍል እንድከፍል የሚፈቅድ ጥያቄ ደብዳቤ ጻፍልኝ
+ለከተማው ፖሊስ ጣቢያ የተሰረቀ ሞባይል ሪፖርት ደብዳቤ ጻፍ፤ ዝርዝሩን በባዶ ቦታ እሞላለሁ
+## writing/messages_social
+ለስራ ባልደረቦቼ የልጄን ክርስትና ግብዣ የሚገልጽ አጭር መልእክት ጻፍ
+ለቀድሞ የክፍል ጓደኛዬ ሠርጓ ላይ ስላልተገኘሁ ይቅርታና መልካም ምኞት የሚገልጽ መልእክት ጻፍ
+## writing/speeches
+በሰፈራችን የበጎ ፈቃድ ወጣቶችን የምናመሰግንበት ቀን ላይ የምናገረው አጭር ንግግር ጻፍ
+## writing/essays_school
+"የቤተሰብ ሚና በልጆች ትምህርት" በሚል ርዕስ የሁለት ገጽ ጽሑፍ ንድፍ አውጣልኝ
+## writing/editing
+ይሄን የፌስቡክ ማስታወቂያ በሰዋሰው አስተካክለው፦ "አዲስ የሴቶች ልብሶች ገብተዋል ይምጡና ይጎብኙን በቅናሽ ዋጋ"
+## writing/business_writing
+ለትንሽ የህትመት ቤቴ የዋጋ ዝርዝር ማስታወቂያ ጽሑፍ ጻፍልኝ፤ ኮፒ፣ ፕሪንት፣ ጥራዝ
+ለደንበኞቻችን የአገልግሎት ጥራት መጠይቅ መግቢያ ጽሑፍ ጻፍ
+## writing/creative_nonfiction
+ስለ መጀመሪያው የገጠር ጉዞዬ ለብሎግ የሚሆን መግቢያ አንቀጽ ጻፍልኝ
+## code_switch/tech_work
+Excel file ዬ ላይ password ማድረግ ይቻላል? ሌሎች እንዳያዩት
+Zoom recording ን ወደ smaller file size እንዴት ልቀይር?
+## code_switch/daily_life
+Grocery list app ለቤተሰብ shared ማድረግ የምችል አለ?
+## code_switch/business_marketing
+WhatsApp Business ላይ catalog እንዴት ልጨምር? Products ብዙ ናቸው
+## code_switch/study
+Online certificate ለ job application ዋጋ አለው? HR ይቀበሉታል?
+## code_switch/relationships
+Friend ዬ ለ birthday ዬ ምንም አላለም፣ hurt ሆኛለሁ፣ ልንገረው?
+## creative/story
+ስለ ጠፋ ድመትና ስለሚፈልጉት ጎረቤቶች ሞቅ ያለ አጭር ታሪክ ጻፍ
+## creative/poem
+ስለ ዝናብ ጠብታና ስለ ደረቅ መሬት ፍቅር አጭር ግጥም ጻፍ
+## creative/humor_riddles
+ስለ ቤት ውስጥ ሪሞት ኮንትሮል መጥፋት ለቤተሰብ የሚያስቅ አጭር ቀልድ ጻፍ

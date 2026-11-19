@@ -1,0 +1,9 @@
+{
+ "input": 300,
+ "kept_with_request": 153,
+ "new_english": 47,
+ "translated": 78,
+ "dropped": 69,
+ "request_phrasings_used": 16,
+ "max_uses": 13
+}

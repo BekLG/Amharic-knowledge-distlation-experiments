@@ -1,0 +1,108 @@
+# New code-switched prompts (Amharic with English words, as typed in practice).
+## code_switch/tech_work
+Excel ላይ የሰራተኞቼን attendance እንዴት track ላድርግ? Simple formula ቢሆን
+Google Sheets ላይ ሁለት column ማወዳደር እፈልጋለሁ፣ duplicate ያሉትን highlight ማድረግ
+Word document ላይ table of contents automatically እንዴት ይሰራል?
+PowerPoint presentation ነገ አለኝ፣ slides design ምን ይሻላል? Professional እንዲመስል
+Zoom meeting ላይ screen share ሳደርግ sound አይሰማም፣ ምን ላድርግ?
+Laptop ዬ overheat ያደርጋል በተለይ Chrome ስከፍት። Fix አለው?
+Phone ላይ hotspot ከፍቼ laptop connect አያደርግም
+Gmail ላይ professional signature እንዴት ልጨምር?
+WiFi password ለመቀየር router settings እንዴት ልግባ?
+Backup ማድረግ አለብኝ ይላሉ፣ Google Drive ወይስ external hard disk ይሻላል?
+Python ላይ list እና dictionary ልዩነቱ ምንድን ነው? Simple example ስጠኝ
+SQL query ላይ JOIN አልገባኝም፣ በዕለት ተዕለት ምሳሌ አስረዳኝ
+Website ልሰራ ነው ለትንሽ business, WordPress ወይስ ራሴ code ላድርግ?
+Git commit እና push ልዩነታቸው ምንድን ነው? Beginner ነኝ
+JavaScript ላይ "undefined is not a function" error ይመጣብኛል፣ ምን ማለት ነው?
+ለ mobile app idea አለኝ ግን coding አላውቅም። No-code tools አሉ?
+Data analyst ለመሆን ምን skills ያስፈልጋሉ? Roadmap ስጠኝ
+API ምንድን ነው? ለ non-technical ሰው አስረዳኝ
+Cybersecurity ውስጥ career መጀመር እፈልጋለሁ፣ certificate ያስፈልጋል?
+Laptop ልገዛ ነው programming ለመማር፣ RAM ስንት ይበቃኛል?
+Telegram bot መስራት ይቻላል በቀላሉ? ለ shop ዬ orders መቀበል ፈልጌ
+ChatGPT ን ለ homework መጠቀም ስህተት ነው? Teacher ዬ ይከለክላል
+Email ላይ CC እና BCC መቼ ነው የሚጠቀሙት?
+Phone storage full ሆኗል፣ cache clear ማድረግ ምንም ጉዳት አለው?
+Office ውስጥ printer network ላይ አይታይም፣ IT ሰው የለም
+VPN ምንድን ነው? ለ privacy ብዬ ኢትዮጵያ ውስጥ መጠቀም ያስፈልገኛል?
+Resume ዬ ላይ "skills" section ምን ልጻፍ? Fresh graduate ነኝ
+LinkedIn profile አለኝ ግን ማንም አያየውም፣ ምን ላሻሽል?
+Freelance website ላይ account ከፍቼ proposal እንዴት ልጻፍ?
+Canva ተጠቅሜ poster መስራት እፈልጋለሁ፣ step by step ንገረኝ
+Online meeting ላይ camera ማብራት ይጨንቀኛል 😅 tips አለህ?
+Deadline ደርሶብኛል ግን task ዎቹ ብዙ ናቸው። እንዴት prioritize ላድርግ?
+Manager ዬ feedback ሲሰጠኝ defensive እሆናለሁ፣ እንዴት ላሻሽል?
+Team meeting ሁልጊዜ ይረዝማል፣ agenda እንዴት ላዘጋጅ effective እንዲሆን?
+Work from home ስሰራ productive መሆን ይከብደኛል
+Project manager ሆኜ ተሾምኩ፣ first week ምን ላድርግ?
+Interview ላይ "What is your weakness?" ሲሉኝ ምን ልመልስ?
+Salary negotiation እንዴት ይደረጋል? Offer letter ደርሶኛል
+Presentation ስሰጥ nervous እሆናለሁ፣ ድምፄ ይንቀጠቀጣል
+Remote job ከውጭ company ማግኘት ይቻላል? Payment እንዴት ይደርሳል?
+Report ስጽፍ executive summary ምን መያዝ አለበት?
+Startup idea አለኝ፣ investor ጋር pitch ለማድረግ ምን ላዘጋጅ?
+Customer service ላይ angry customer ሲመጣ እንዴት ልያዘው?
+Excel ላይ pivot table ምንድን ነው? ለ sales data እንዴት ልጠቀም?
+## code_switch/study
+Assignment deadline ነገ ነው ገና አልጀመርኩም 😭 ከየት ልጀምር?
+GPA ዬ 2.8 ነው፣ scholarship ለማግኘት chance አለኝ?
+Online course ከ Coursera ልውሰድ ወይስ YouTube ይበቃል?
+Exam ሳነብ notes መውሰድ ይሻላል ወይስ highlight ማድረግ?
+Group project ላይ አንድ member ምንም contribute አያደርግም
+English speaking skill ለማሻሻል daily routine ስጠኝ
+IELTS ለመፈተን prepare እያደረግሁ ነው፣ writing section ይከብደኛል
+Thesis ዬ ላይ supervisor ዬ feedback አይሰጠኝም
+Library ውስጥ study ሳደርግ ይደብረኛል፣ cafe ውስጥ ይሻላል?
+Summer break ላይ ምን skill ልማር? Free resources ካሉ
+Medical school ለመግባት ምን prepare ማድረግ አለብኝ?
+Math ላይ derivative concept አልገባኝም፣ real life example ስጠኝ
+Internship application ላይ motivation letter እንዴት ይጻፋል?
+Final exam ሳምንት stress ሲበዛ እንዴት ልቋቋመው?
+University ውስጥ roommate ዬ ጋር schedule አይጣጣምም
+## code_switch/business_marketing
+Instagram page ዬ followers አያድጉም፣ content strategy ምን ይሁን?
+TikTok ላይ የሱቄን products እንዴት ላስተዋውቅ?
+Small business ስለሆንኩ logo design በርካሽ እንዴት ላሰራ?
+Customer ዎች WhatsApp ላይ order ያደርጋሉ፣ እንዴት organize ላድርግ?
+Facebook ads ስንት ብር ያስወጣል? Budget ትንሽ ነው
+ለ online shop ዬ delivery system እንዴት ላዘጋጅ? Addis ውስጥ ብቻ
+Brand name እየፈለግሁ ነው ለ coffee shop, ideas ስጠኝ
+Product price ስተምን profit margin እንዴት ላስላ?
+Customer review negative ሲሆን public reply ምን ልጻፍ?
+Inventory management Excel ላይ ይበቃል ወይስ software ያስፈልጋል?
+Business plan template ስጠኝ ለ bakery
+Marketing ላይ "target audience" ምን ማለት ነው? በምሳሌ
+Wholesale ገዝቶ retail መሸጥ profitable ነው? Risks ንገረኝ
+Partnership agreement ላይ ምን clauses ይኑሩ?
+Cash flow problem አለብኝ፣ supplier ዎችን ሳላስከፋ ጊዜ እንዴት ልጠይቅ?
+Email marketing ኢትዮጵያ ውስጥ ይሰራል?
+## code_switch/daily_life
+Weekend plan የለኝም፣ Addis ውስጥ ምን fun activities አሉ?
+Gym membership ልግዛ ወይስ home workout ይበቃል?
+Diet ላይ ነኝ ግን injera ማቆም አልችልም 😂 ምን ላድርግ?
+Netflix ላይ ምን Amharic content አለ? Recommend አድርግልኝ
+Birthday party ለ friend surprise እናዘጋጃለን፣ ideas?
+Morning routine productive እንዲሆን tips ስጠኝ
+Coffee ብዙ እጠጣለሁ፣ caffeine ን ቀስ ብዬ እንዴት ልቀንስ?
+Online shopping ላይ scam ሳይሆን እንዴት ላውቅ?
+Mobile banking app ላይ transaction failed ይላል ግን ብሩ ተቆርጧል
+Uber ወይም Ride ስጠቀም safety tips ምንድን ናቸው?
+Phone addiction አለብኝ መሰለኝ፣ screen time ን እንዴት ልቀንስ?
+Wedding planning budget እንዴት እናውጣ? Guest list 200 ነው
+Skin care routine ለ dry skin ምን ይሻላል? Simple ይሁን
+New Year resolution ሁሌ ይከሽፋል፣ realistic goals እንዴት ላስቀምጥ?
+Road trip ወደ Hawassa ልንሄድ ነው፣ checklist ስጠኝ
+Pet ልያዝ ነው first time, cat or dog?
+Podcast መጀመር እፈልጋለሁ በአማርኛ, equipment ምን ያስፈልገኛል?
+Bank loan ለ car ልውሰድ ወይስ cash እስክቆጥብ ልጠብቅ?
+Movie night ለቤተሰብ፣ ምን ፊልም ይሻላል ልጆችም ስላሉ?
+Time management app ምን ትመክረኛለህ? Free ቢሆን
+## code_switch/relationships
+Long distance relationship ውስጥ ነኝ፣ communication እንዴት እናሻሽል?
+Friend ዬ ሁልጊዜ last minute plan cancel ያደርጋል
+Group chat ላይ argument ተነሳ፣ neutral ሆኜ እንዴት ልቆይ?
+Ex ዬ message ላከልኝ፣ reply ላድርግ?
+First date ላይ ምን ማውራት ይሻላል? Awkward እንዳይሆን
+Colleague ዬ personal questions ይጠይቀኛል፣ boundary እንዴት ላስቀምጥ?
+Social media ላይ cyberbullying እየደረሰብኝ ነው፣ ምን ላድርግ?

@@ -1,0 +1,13 @@
+{
+ "knowledge_rows": 350,
+ "by_sub": {
+  "reading_comprehension": 172,
+  "trivia": 104,
+  "concept": 74
+ },
+ "promoted_to_translated": 58,
+ "dropped": 239,
+ "trivia_rows_with_tail": 30,
+ "trivia_rows_originally_with_tail": 101,
+ "eval_reserve": 20
+}

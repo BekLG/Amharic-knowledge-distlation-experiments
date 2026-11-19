@@ -1,0 +1,26 @@
+{
+ "train_total": 4955,
+ "eval_from_steps": 198,
+ "removed": 1402,
+ "new_prompts": 1160,
+ "by_category": {
+  "native_chat": 493,
+  "translated_instruction": 220,
+  "english_instruction": 200,
+  "summarization": 305,
+  "translation_en_am": 250,
+  "translation_am_en": 200,
+  "news_classification": 100,
+  "knowledge_qa": 350,
+  "everyday": 850,
+  "ethiopia_culture": 479,
+  "writing": 480,
+  "math": 260,
+  "format": 118,
+  "code_switch": 220,
+  "latin_amharic": 150,
+  "creative": 130,
+  "safety": 150
+ },
+ "out_of_range": {}
+}

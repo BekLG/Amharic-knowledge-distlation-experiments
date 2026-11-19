@@ -1,0 +1,16 @@
+# Eval file decisions for rows classified as native (id prefix after "pilot_" -> decision, reason)
+# D = drop. Natives not listed are kept for eval (50) and the surplus goes to train.
+79cdd7fb	D	US TV trivia
+2b080e38	D	garbled, no clear request
+6cd8dfde	D	duplicate of f8cf3aed
+1090de79	D	duplicate of e0e500eb
+8e49453f	D	near-duplicate of a train prompt (first iPhone model)
+e2e336b4	D	near-duplicate of a train prompt (Oil Libya headquarters)
+6df17cb0	D	garbled machine translation
+272e1734	D	US geography trivia
+c0ecfab7	D	garbled machine translation, context missing
+5d545732	D	US-specific travel question
+22d78b4a	D	near-duplicate of 9ad8ea81
+d8ef20e1	D	US sports trivia
+94606f4d	D	same question exists in train
+44ef1e13	D	same question exists in train (with passage)
