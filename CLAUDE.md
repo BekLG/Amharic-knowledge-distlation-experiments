@@ -30,7 +30,7 @@ The project lead is Bereket Legesse, an ML engineer at iCog Labs. A team member 
 ### Open items
 
 - [ ] **Repo visibility:** the GitHub repo is currently public. Make it private until the source licences are checked (section 10, Licences).
-- [ ] Add the OpenRouter version of `teacher/gen_teacher.py` (and `filter_teacher.py`/`merge_review.py` if they changed), plus `docs/RUN_teacher.md` and `.env.example`. The scripts now in `teacher/` are the older local-only version (Ollama, llama.cpp/vLLM); their guide is `docs/RUN_teacher_local.md`.
+- [x] Add the OpenRouter version of the teacher scripts, `docs/RUN_teacher.md` and `.env.example`. (Done 2026-11-19; checked end to end against a local mock server, not the real API.)
 - [ ] `math_answers.csv`: the row "ልጄ የተወለደው በ2010 ዓ.ም ነው። በ2018 ዓ.ም መስከረም ላይ ስንት ዓመቱ ይሆናል?" says 8, but the answer is 7 or 8 depending on the birth month. Set it to missing, or add a birth month to the prompt.
 - [x] Bring the Claude Code fix-run scripts and the `data/manual/` folder into `data_prep/`, so the pilot set can be reproduced. (Done 2026-11-19: `data_prep/` and `data_prep/manual/`; a rerun reproduces `data/prompts/` byte for byte.)
 - [ ] Optional cleanup: remove 1 near-duplicate driving multiple-choice question, 2 prompts that ask the assistant about itself (e.g. "አንተ መጥፎ ልማድህ ምንድን ነው?"), and the awkward greetings that were added mechanically.
@@ -56,9 +56,9 @@ The project lead is Bereket Legesse, an ML engineer at iCog Labs. A team member 
 .
 ├── CLAUDE.md                 # this file
 ├── README.md                 # short human-facing overview
-├── .env.example              # copy to .env; holds OPENROUTER_API_KEY (never commit .env) — to be added
+├── .env.example              # copy to .env; holds OPENROUTER_API_KEY (never commit .env)
 ├── docs/
-│   ├── RUN_teacher.md        # step-by-step teacher run (OpenRouter) — to be added
+│   ├── RUN_teacher.md        # step-by-step teacher run (OpenRouter)
 │   ├── RUN_teacher_local.md  # older local run guide (Ollama / llama.cpp)
 │   └── SPEC_pilot_fix.md     # spec used to fix the pilot prompt set (paths in it predate this layout)
 ├── data_prep/                # scripts that build and validate prompt sets
@@ -66,7 +66,7 @@ The project lead is Bereket Legesse, an ML engineer at iCog Labs. A team member 
 │   ├── validate.py           # schema, duplicates, leakage, language mix, PII, safety IDs
 │   └── manual/               # hand-made judgements and prompts used by the scripts
 ├── teacher/
-│   ├── gen_teacher.py        # teacher generation; resumable
+│   ├── gen_teacher.py        # teacher generation (Ollama, llama.cpp/vLLM, OpenRouter); resumable
 │   ├── filter_teacher.py     # automatic checks → sft / review / rejected
 │   └── merge_review.py       # merges human-approved rows back in
 ├── students/                 # student fine-tuning code and configs (to be added)
@@ -263,4 +263,5 @@ Add a line whenever a decision is made or changed.
 | 2026-11-11 | Pilot fix done by Claude Code from the spec. All English prompts lead to Amharic answers. |
 | 2026-11-11 | Tightened teacher system prompt (length, formatting, ዓ.ም/እ.ኤ.አ., accuracy, safety) and raised the output caps. |
 | 2026-11-19 | Teacher generation moves to OpenRouter instead of the local laptop. The project is managed in a GitHub repo, with this file as the guide. |
+| 2026-11-19 | OpenRouter teacher pipeline added (`teacher/`, `docs/RUN_teacher.md`, `.env.example`). |
 | 2026-11-19 | Repo restructured to the layout in section 4: pilot-fix scripts in `data_prep/`, final prompt sets in `data/prompts/`, teacher scripts in `teacher/`. |

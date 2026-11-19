@@ -1,6 +1,6 @@
 # Teacher generation for the Amharic distillation pilot (local run)
 
-This is the older local-run guide (Ollama / llama.cpp). The main run uses OpenRouter; see `docs/RUN_teacher.md` once it is added.
+This is the older local-run guide (Ollama / llama.cpp). The main run uses OpenRouter; see `docs/RUN_teacher.md`.
 
 The three scripts need only Python 3.9+ (standard library) and a running Ollama or llama.cpp server.
 

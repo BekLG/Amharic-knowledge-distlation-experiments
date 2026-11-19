@@ -17,6 +17,9 @@ Examples
   # llama.cpp server started with: llama-server -m gemma-4-26b.gguf -np 4 -c 16384 --port 8080
   python gen_teacher.py ... --backend openai --url http://localhost:8080 --model gemma4 --workers 4
 
+  # OpenRouter (export OPENROUTER_API_KEY=sk-or-... first)
+  python gen_teacher.py ... --openrouter --workers 16
+
   # Check throughput on 20 prompts first
   python gen_teacher.py ... --limit 20 --out smoke.jsonl
 """
@@ -27,25 +30,33 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # Teacher-only instruction. It steers the teacher's answers and is NOT saved into the
 # training conversations, so the student learns to answer this way without seeing it.
 DEFAULT_SYSTEM = (
-    "You are a helpful, accurate assistant for Ethiopian users. "
-    "Answer in Amharic (Ge'ez script) unless the user clearly asks for another language "
-    "or the task is a translation into another language. If the user writes in Latin-script "
-    "Amharic or mixes English, still answer in natural Amharic, keeping common English "
-    "technical terms where people normally use them. "
-    "Be clear and helpful, and keep answers reasonably short unless the user asks for detail. "
-    "Do not invent facts, names, statistics, phone numbers, prices or links. If you are not sure, "
-    "say so. If information is missing or contradictory, point it out. "
-    "For self-harm, abuse or emergencies, respond with care, encourage contacting trusted people "
-    "and local emergency services or a health professional, and never give harmful instructions. "
-    "Decline requests that would cause harm, briefly and politely, and offer a safe alternative."
+    "You are a helpful, accurate assistant for Ethiopian users.\n"
+    "Language: answer in natural Amharic (Ge'ez script) unless the user clearly asks for another language "
+    "or the task is a translation into another language. If the user writes in Latin-script Amharic or mixes "
+    "English, still answer in natural Amharic. Use English words only where Ethiopians normally use them, "
+    "such as technical terms; do not add English translations in brackets after ordinary Amharic words.\n"
+    "Length: answer directly. Most answers should be under about 150 words. Use a short list only when it "
+    "helps. Do not restate the question or add long introductions and summaries. Write more only when the "
+    "user asks for detail or the task needs it, such as a letter, story or step-by-step plan.\n"
+    "Formatting: short paragraphs and simple numbered or bulleted lists; bold only a few key words. "
+    "No headings (#), no horizontal lines, no HTML.\n"
+    "Dates: write Gregorian years with እ.ኤ.አ. (for example እ.ኤ.አ. 1969) and use ዓ.ም only for "
+    "Ethiopian-calendar dates.\n"
+    "Accuracy: do not invent facts, names, statistics, laws, phone numbers, prices or links. If a question "
+    "depends on a text or context that was not given, or you are not sure, say so briefly instead of guessing. "
+    "If information is missing or contradictory, point it out. For multiple-choice questions, check each "
+    "option carefully before answering.\n"
+    "Safety: for self-harm, abuse or emergencies, respond with care, encourage contacting trusted people, "
+    "local emergency services or a health professional, and never give harmful instructions. Decline "
+    "harmful requests briefly and politely, and offer a safe alternative."
 )
 
 # Output-length caps per category (tokens). Keeps the run short without cutting useful answers.
 MAX_TOKENS = {
     "format": 250, "news_classification": 250, "translation_en_am": 500, "translation_am_en": 450,
-    "summarization": 400, "knowledge_qa": 450, "math": 650, "creative": 800, "writing": 700,
+    "summarization": 400, "knowledge_qa": 500, "math": 800, "creative": 1000, "writing": 1000,
 }
-DEFAULT_MAX_TOKENS = 600
+DEFAULT_MAX_TOKENS = 900
 
 stop_flag = threading.Event()
 write_lock = threading.Lock()
@@ -90,8 +101,11 @@ def order_rows(eval_rows, train_rows, seed=13):
     return list(eval_rows) + inter
 
 
-def post(url, payload, timeout):
-    req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"})
+def post(url, payload, timeout, api_key=None):
+    headers = {"Content-Type": "application/json"}
+    if api_key:
+        headers["Authorization"] = f"Bearer {api_key}"
+    req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers=headers)
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
@@ -125,15 +139,39 @@ def call_teacher(args, row, system):
         in_tok = d.get("prompt_eval_count")
     else:
         payload = {"model": args.model, "messages": messages, "temperature": args.temperature,
-                   "top_p": args.top_p, "max_tokens": max_tok, "seed": args.seed,
-                   "chat_template_kwargs": {"enable_thinking": False}}
-        d = post(args.url.rstrip("/") + "/v1/chat/completions", payload, args.timeout)
+                   "top_p": args.top_p, "max_tokens": max_tok}
+        if args.openrouter:
+            payload["reasoning"] = {"enabled": False}
+            payload["usage"] = {"include": True}
+            prov = {}
+            if args.provider:
+                prov["order"] = [x.strip() for x in args.provider.split(",") if x.strip()]
+                prov["allow_fallbacks"] = False
+            if args.quantizations:
+                prov["quantizations"] = [x.strip() for x in args.quantizations.split(",") if x.strip()]
+            if prov:
+                payload["provider"] = prov
+        else:
+            payload["seed"] = args.seed
+            payload["chat_template_kwargs"] = {"enable_thinking": False}
+        base = args.url.rstrip("/")
+        endpoint = base + ("/chat/completions" if base.endswith("/v1") else "/v1/chat/completions")
+        d = post(endpoint, payload, args.timeout, api_key=args.api_key)
+        if "error" in d:
+            raise RuntimeError(str(d["error"])[:300])
         ch = d["choices"][0]
         text = ch["message"].get("content") or ""
-        thinking = ch["message"].get("reasoning_content")
+        thinking = ch["message"].get("reasoning_content") or ch["message"].get("reasoning")
         finish = ch.get("finish_reason", "stop")
-        u = d.get("usage", {})
+        u = d.get("usage", {}) or {}
         out_tok, in_tok = u.get("completion_tokens"), u.get("prompt_tokens")
+        cost = u.get("cost")
+        provider_used = d.get("provider")
+        return {
+            "response": text.strip(), "finish_reason": finish, "thinking_present": bool(thinking),
+            "output_tokens": out_tok, "prompt_tokens": in_tok, "max_tokens": max_tok,
+            "seconds": round(time.time() - t0, 2), "cost_usd": cost, "provider": provider_used,
+        }
     return {
         "response": text.strip(), "finish_reason": finish, "thinking_present": bool(thinking),
         "output_tokens": out_tok, "prompt_tokens": in_tok, "max_tokens": max_tok,
@@ -191,8 +229,22 @@ def main():
     ap.add_argument("--system", default="default", help="'default', 'none', or a path to a text file")
     ap.add_argument("--only", choices=["all", "eval", "train"], default="all")
     ap.add_argument("--limit", type=int, default=0, help="stop after N new rows (for a smoke test)")
+    ap.add_argument("--openrouter", action="store_true", help="use OpenRouter: sets URL, disables reasoning, records cost")
+    ap.add_argument("--api_key_env", default="OPENROUTER_API_KEY", help="environment variable holding the API key")
+    ap.add_argument("--provider", default="", help="OpenRouter: comma-separated provider names to use, no fallbacks")
+    ap.add_argument("--quantizations", default="", help="OpenRouter: allowed quantizations, e.g. bf16,fp8")
     ap.add_argument("--log_every", type=float, default=30, help="seconds between progress lines")
     args = ap.parse_args()
+    args.api_key = None
+    if args.openrouter:
+        args.backend = "openai"
+        if args.url == "http://localhost:11434":
+            args.url = "https://openrouter.ai/api/v1"
+        if args.model == "gemma4:26b":
+            args.model = "google/gemma-4-26b-a4b-it"
+        args.api_key = os.environ.get(args.api_key_env)
+        if not args.api_key:
+            sys.exit(f"Set your key first: export {args.api_key_env}=sk-or-...")
 
     system = DEFAULT_SYSTEM if args.system == "default" else ("" if args.system == "none" else open(args.system, encoding="utf-8").read().strip())
 
@@ -215,7 +267,7 @@ def main():
             os._exit(1)
     signal.signal(signal.SIGINT, handle_sigint)
 
-    start, n_ok, tok, last_print = time.time(), 0, 0, 0.0
+    start, n_ok, tok, last_print, cost = time.time(), 0, 0, 0.0, 0.0
     with open(args.out, "a", encoding="utf-8") as out_f, ThreadPoolExecutor(max_workers=args.workers) as ex:
         futs = [ex.submit(worker, args, r, system, out_f) for r in todo]
         for f in as_completed(futs):
@@ -224,15 +276,16 @@ def main():
                 continue
             n_ok += 1
             tok += rec.get("output_tokens") or 0
+            cost += rec.get("cost_usd") or 0
             el = time.time() - start
             if time.time() - last_print >= args.log_every or n_ok == len(todo):
                 last_print = time.time()
                 rate = n_ok / el if el else 0
                 eta_h = (len(todo) - n_ok) / rate / 3600 if rate else 0
                 print(f"[{time.strftime('%H:%M:%S')}] {n_ok}/{len(todo)} | {tok/el:.1f} out tok/s | "
-                      f"{rate*3600:.0f} rows/h | ETA {eta_h:.1f} h | last: {rec['category']} {rec['output_tokens']} tok, {rec['finish_reason']}",
+                      f"{rate*3600:.0f} rows/h | ETA {eta_h:.1f} h | ${cost:.3f} | last: {rec['category']} {rec['output_tokens']} tok, {rec['finish_reason']}",
                       flush=True)
-    print(f"\ndone: {n_ok} rows, {tok} output tokens in {(time.time()-start)/3600:.2f} h", flush=True)
+    print(f"\ndone: {n_ok} rows, {tok} output tokens, ${cost:.3f}, in {(time.time()-start)/3600:.2f} h", flush=True)
 
 
 if __name__ == "__main__":

@@ -176,6 +176,10 @@ def main():
             hard.append("truncated")
         if THINK.search(resp):
             hard.append("thinking_leak")
+        if re.search(r"</?(i|b|u|br|span|div|p)\s*/?>", resp):
+            hard.append("html_tag")
+        if re.search(r"\b(1[5-9]\d\d|20[0-3]\d)\s*ዓ\.?\s*ም", resp):
+            soft.append("check_calendar_label")
         rep = repetition_score(resp)
         if rep > 0.25 or max_line_repeat(resp) >= 3:
             hard.append(f"repetition({rep:.2f})")

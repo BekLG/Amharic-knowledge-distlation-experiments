@@ -1,5 +1,28 @@
-.venv/
+# secrets
+.env
+*.key
+
+# python
 __pycache__/
 *.pyc
+.venv/
+venv/
+
+# large or generated artifacts
+*.gguf
+*.safetensors
+*.bin
+*.pt
+checkpoints/
+outputs/
+wandb/
+runs/
+
+# logs and scratch
+data/teacher/*.log
+data/teacher/smoke*.jsonl
+*.tmp
+.DS_Store
+
+# local archives
 *.zip
-.env
