@@ -264,4 +264,5 @@ Add a line whenever a decision is made or changed.
 | 2026-11-11 | Tightened teacher system prompt (length, formatting, ዓ.ም/እ.ኤ.አ., accuracy, safety) and raised the output caps. |
 | 2026-11-19 | Teacher generation moves to OpenRouter instead of the local laptop. The project is managed in a GitHub repo, with this file as the guide. |
 | 2026-11-19 | OpenRouter teacher pipeline added (`teacher/`, `docs/RUN_teacher.md`, `.env.example`). |
+| 2026-11-19 | Teacher system prompt tightened again: no bracketed English glosses, ዓ.ም never on foreign-event years, translations output only the translation. Pin DeepInfra (bf16/fp8) for teacher runs. |
 | 2026-11-19 | Repo restructured to the layout in section 4: pilot-fix scripts in `data_prep/`, final prompt sets in `data/prompts/`, teacher scripts in `teacher/`. |
