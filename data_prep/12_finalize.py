@@ -1,8 +1,9 @@
 """Step 13 + outputs: write the JSONL files, removed.csv, changed.csv, review_sample.csv and
-teacher_answer_review_ids.txt to data/out/."""
+teacher_answer_review_ids.txt to data/prompts/."""
 import csv
 import json
 import random
+import shutil
 from collections import Counter, defaultdict
 
 import pandas as pd
@@ -67,6 +68,8 @@ def main():
     ids = [r["id"] for r in train + evalr if r["category"] == "safety" or r.get("sensitive")
            or r.get("loaded_terms")]
     (OUT / "teacher_answer_review_ids.txt").write_text("\n".join(ids) + "\n", encoding="utf-8")
+    # math answers sit next to the prompt sets so the teacher filter can use them
+    shutil.copy(WORK / "math_answers.csv", OUT / "math_answers.csv")
 
     # review_sample.csv: 150 rows needing review, stratified by category, every eval category present
     rnd = random.Random(13)

@@ -1,0 +1,19 @@
+# Amharic distillation
+
+The goal is a small Amharic chatbot model (1B–4B), built by distilling answers from Gemma 4 26B A4B.
+
+- **Project guide** (goals, status, decisions, rules): [`CLAUDE.md`](CLAUDE.md)
+- **How to run the teacher generation:** [`docs/RUN_teacher.md`](docs/RUN_teacher.md)
+- **Prompt sets:** built and validated by `data_prep/` (`bash data_prep/run_all.sh` rebuilds `data/prompts/` from `data/raw/`); see `data/prompts/REPORT.md`.
+- **Experiment log:** [`experiments/LOG.md`](experiments/LOG.md)
+
+## Quick start
+
+```bash
+cp .env.example .env            # add your OpenRouter key
+set -a; source .env; set +a
+python teacher/gen_teacher.py --train data/prompts/pilot_train.jsonl --eval data/prompts/pilot_eval.jsonl \
+  --out data/teacher/smoke.jsonl --openrouter --workers 8 --limit 20
+```
+
+The scripts need only Python 3.9+ with the standard library.

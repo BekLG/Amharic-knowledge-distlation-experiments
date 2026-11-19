@@ -1,7 +1,7 @@
 """Step 7: knowledge and trivia.
 
 * amharic_qa reading-comprehension rows: keep those whose question matches the passage
-* NQ-Open / Dolly machine-translated questions: hand labels from data/manual (fix or drop)
+* NQ-Open / Dolly machine-translated questions: hand labels from data_prep/manual (fix or drop)
 * at most 150 non-Ethiopian trivia questions (science / world geography preferred)
 * generic answer-style tails kept on at most 30 % of the tail-carrying prompts
 * some Dolly open-ended instructions move to translated_instruction (they are translated Dolly)

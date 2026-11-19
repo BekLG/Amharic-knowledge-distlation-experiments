@@ -3,7 +3,7 @@
 Sources: native rows of the old eval file (50; surplus natives go to train), held-out
 reading-comprehension rows + the Gurnah row with its premise fixed (knowledge 20),
 old eval passages turned into summarisation tasks (20), one natural rewrite per old
-templated eval situation, and fresh eval prompts (data/manual/new_prompts/eval_*.txt),
+templated eval situation, and fresh eval prompts (data_prep/manual/new_prompts/eval_*.txt),
 plus the eval rows produced by the math / format / latin steps.
 """
 import json
